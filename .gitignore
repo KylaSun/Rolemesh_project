@@ -1,0 +1,15 @@
+# Python 虚拟环境与缓存
+.venv/
+__pycache__/
+*.py[cod]
+
+# 本地配置和数据库
+.env
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# 系统文件
+.DS_Store
