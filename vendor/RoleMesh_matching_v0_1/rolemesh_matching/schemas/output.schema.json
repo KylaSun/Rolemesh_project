@@ -1,0 +1,482 @@
+{
+  "type": "object",
+  "properties": {
+    "contract_version": {
+      "const": "0.1.0"
+    },
+    "algorithm_version": {
+      "type": "string"
+    },
+    "recommendations": {
+      "type": "array",
+      "items": {
+        "allOf": [
+          {
+            "$ref": "#/$defs/result"
+          },
+          {
+            "properties": {
+              "eligibility": {
+                "const": "eligible"
+              },
+              "scoring_status": {
+                "const": "complete"
+              },
+              "match": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 100
+              }
+            }
+          }
+        ]
+      }
+    },
+    "projects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "project_id": {
+            "type": "string"
+          },
+          "best_role_id": {
+            "type": "string"
+          },
+          "match": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 100
+          },
+          "reasons": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "code": {
+                  "type": "string"
+                },
+                "label": {
+                  "type": "string"
+                },
+                "text": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "code",
+                "label",
+                "text"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "project_id",
+          "best_role_id",
+          "match",
+          "reasons"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "comparisons": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/result"
+      }
+    }
+  },
+  "required": [
+    "contract_version",
+    "algorithm_version",
+    "recommendations",
+    "projects",
+    "comparisons"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RoleMesh V0.1 matching response",
+  "$defs": {
+    "result": {
+      "type": "object",
+      "properties": {
+        "profile_id": {
+          "type": "string"
+        },
+        "project_id": {
+          "type": "string"
+        },
+        "role_id": {
+          "type": "string"
+        },
+        "eligibility": {
+          "enum": [
+            "eligible",
+            "ineligible",
+            "needs_confirmation"
+          ]
+        },
+        "match": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 100
+        },
+        "provisional_match": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 100
+        },
+        "scoring_status": {
+          "enum": [
+            "complete",
+            "provisional",
+            "insufficient_data",
+            "not_scored"
+          ]
+        },
+        "scoring_coverage": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "component_scores": {
+          "type": "object",
+          "properties": {
+            "skills": {
+              "type": "object",
+              "properties": {
+                "status": {
+                  "enum": [
+                    "not_configured",
+                    "no_preference",
+                    "scored",
+                    "missing"
+                  ]
+                },
+                "score": {
+                  "type": [
+                    "number",
+                    "null"
+                  ],
+                  "minimum": 0,
+                  "maximum": 100
+                },
+                "method": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              },
+              "required": [
+                "status",
+                "score",
+                "method"
+              ],
+              "additionalProperties": false
+            },
+            "role": {
+              "type": "object",
+              "properties": {
+                "status": {
+                  "enum": [
+                    "not_configured",
+                    "no_preference",
+                    "scored",
+                    "missing"
+                  ]
+                },
+                "score": {
+                  "type": [
+                    "number",
+                    "null"
+                  ],
+                  "minimum": 0,
+                  "maximum": 100
+                },
+                "method": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              },
+              "required": [
+                "status",
+                "score",
+                "method"
+              ],
+              "additionalProperties": false
+            },
+            "domain": {
+              "type": "object",
+              "properties": {
+                "status": {
+                  "enum": [
+                    "not_configured",
+                    "no_preference",
+                    "scored",
+                    "missing"
+                  ]
+                },
+                "score": {
+                  "type": [
+                    "number",
+                    "null"
+                  ],
+                  "minimum": 0,
+                  "maximum": 100
+                },
+                "method": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              },
+              "required": [
+                "status",
+                "score",
+                "method"
+              ],
+              "additionalProperties": false
+            },
+            "time": {
+              "type": "object",
+              "properties": {
+                "status": {
+                  "enum": [
+                    "not_configured",
+                    "no_preference",
+                    "scored",
+                    "missing"
+                  ]
+                },
+                "score": {
+                  "type": [
+                    "number",
+                    "null"
+                  ],
+                  "minimum": 0,
+                  "maximum": 100
+                },
+                "method": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              },
+              "required": [
+                "status",
+                "score",
+                "method"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "skills",
+            "role",
+            "domain",
+            "time"
+          ],
+          "additionalProperties": false
+        },
+        "effective_weights": {
+          "type": "object",
+          "propertyNames": {
+            "enum": [
+              "skills",
+              "role",
+              "domain",
+              "time"
+            ]
+          },
+          "additionalProperties": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          }
+        },
+        "reasons": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "code": {
+                "type": "string"
+              },
+              "label": {
+                "type": "string"
+              },
+              "text": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "code",
+              "label",
+              "text"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "unmet_requirements": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "code": {
+                "type": "string"
+              },
+              "label": {
+                "type": "string"
+              },
+              "text": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "code",
+              "label",
+              "text"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "missing_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "hard_checks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "code": {
+                "type": "string"
+              },
+              "status": {
+                "enum": [
+                  "pass",
+                  "fail",
+                  "unknown"
+                ]
+              },
+              "text": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "code",
+              "status",
+              "text"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "warnings": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "profile_version": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "role_version": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "algorithm_version": {
+          "type": "string"
+        },
+        "model_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "model_revision": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "computed_at": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "profile_id",
+        "project_id",
+        "role_id",
+        "eligibility",
+        "match",
+        "provisional_match",
+        "scoring_status",
+        "scoring_coverage",
+        "component_scores",
+        "effective_weights",
+        "reasons",
+        "unmet_requirements",
+        "missing_fields",
+        "hard_checks",
+        "warnings",
+        "profile_version",
+        "role_version",
+        "algorithm_version",
+        "model_id",
+        "model_revision",
+        "computed_at"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "scoring_status": {
+                "const": "complete"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "match": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 100
+              },
+              "eligibility": {
+                "const": "eligible"
+              },
+              "scoring_coverage": {
+                "const": 1
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "match": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

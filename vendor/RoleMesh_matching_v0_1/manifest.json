@@ -1,0 +1,158 @@
+[
+  {
+    "path": "contracts/codebook_seed.json",
+    "sha256": "fd4bb8dcf8b29788081ae924f8df29dd825ff8045eab877ecbf92e84ffe846b4"
+  },
+  {
+    "path": "contracts/error.schema.json",
+    "sha256": "8ba77c20c7910f2912809e69f5c558be55892cadeefa2d95c5fe5a68ec0313d5"
+  },
+  {
+    "path": "contracts/field_dictionary.json",
+    "sha256": "3351c504547e2f4c26cb57e842d81a912a7212e2f410cabcc4b2fca7bebdeb3a"
+  },
+  {
+    "path": "contracts/input.schema.json",
+    "sha256": "5a4fb843d9e3b30981d9ae27267dc8ae42254509bf12bd7390a8d13ce4a3ac30"
+  },
+  {
+    "path": "contracts/output.schema.json",
+    "sha256": "e3458cd5dbd86747ba171a66792d33c11ee5b38a90ff48eb416deb0a7f1306fe"
+  },
+  {
+    "path": "demo.py",
+    "sha256": "fe6bfc12fad3d7ef564aab454033b8ba5f59b62db692ef618f84fc8a51021200"
+  },
+  {
+    "path": "demo_gte.py",
+    "sha256": "586d5b8da9d45f7d380de0f42f50a1611acc178298efe1768d5204f4804de089"
+  },
+  {
+    "path": "docs/source_audit.json",
+    "sha256": "58ca9472c11404d68f0fea971637835fc9582f2a172256fcdec99d2d21d5d187"
+  },
+  {
+    "path": "docs/validation.json",
+    "sha256": "f9e5269ffb497e58e4090cb72c367f49ee7338b8142d5539807e32e9ce163036"
+  },
+  {
+    "path": "download_model.py",
+    "sha256": "db04f855d89bbe8d16ec3e5e6e21fc729daa8eb1b04e60bb5239d1b414a637aa"
+  },
+  {
+    "path": "examples/ahp.json",
+    "sha256": "179001063223d61d975dd1722deab8507de15501dbcdd455372420077325ac0d"
+  },
+  {
+    "path": "examples/contract_cases.json",
+    "sha256": "b5b1049f2fcfb8aa785461a83b5ec426309f8f8a4c64343fd2174d6a7424b992"
+  },
+  {
+    "path": "examples/contract_results.json",
+    "sha256": "631777ed11661d7af93cceb09813fa7ed07dc64409fce788641ebbf3cda9765d"
+  },
+  {
+    "path": "examples/frontend_raw.json",
+    "sha256": "36d0d82a9f9d761a4c56326532a676cb9145e2f89b0c7767f63874862ff01909"
+  },
+  {
+    "path": "examples/input.json",
+    "sha256": "7002f3c83183cd4031c19f998dea885537e0b29465d4d297a6cf7c5e352a017f"
+  },
+  {
+    "path": "examples/input_semantic.json",
+    "sha256": "2efe1d1e1c66cca9eb73ac9d8167075e5f0c21b70e0f76a457b5ca954090efa3"
+  },
+  {
+    "path": "examples/output.json",
+    "sha256": "a4df8a75e952df60072ede041904cfec5293c358e8e60a2a80d6537c3d0f1c5a"
+  },
+  {
+    "path": "frontend/bridge.mjs",
+    "sha256": "6a504aff0c736bf19bd0ddc73af5be999b0b1c6d8c7c0729110f489d9f980c03"
+  },
+  {
+    "path": "frontend/test_bridge.mjs",
+    "sha256": "6da8a50f634ff2e333f7b79f604937d9ca68e9c6c5e73474f002333d6cf8777e"
+  },
+  {
+    "path": "frontend/test_states.mjs",
+    "sha256": "fd98891eb89e62840d3760e6844000af9e2a3aec8d248c6b7ed33879c0de4f08"
+  },
+  {
+    "path": "PDF算法参考与取舍.html",
+    "sha256": "835c89e7fc137b50176c1dec6d046e4ca23bcfe4365946e697b86d138116aa6a"
+  },
+  {
+    "path": "pyproject.toml",
+    "sha256": "2c3cdf6a2a4bbe3189ddc076f801a23a12441b176bfea10ea049a944c754bf2d"
+  },
+  {
+    "path": "README.txt",
+    "sha256": "a4acdbc291b601c542bee5a457f259e590bf28c956663d3b519eeeb41363379d"
+  },
+  {
+    "path": "references/组队项目算法推荐.pdf",
+    "sha256": "9b8329585132009762899624d446eb14fc487389bc95ec9bdabb470af9963eea"
+  },
+  {
+    "path": "requirements-gte.txt",
+    "sha256": "6b21939fd9a7ee067ceec3bec398ec19d61e451e3d53bedf3c167877c3c5a5ff"
+  },
+  {
+    "path": "requirements.txt",
+    "sha256": "011d8a781c417e3fb942c85b4ce44b78731466b66db88ffe4ee9d1a193e6954e"
+  },
+  {
+    "path": "rolemesh_matching/__init__.py",
+    "sha256": "d6be2909e630bcc2fcce44ecd627d41e26194c7e13dc1ae7f2568f4061488468"
+  },
+  {
+    "path": "rolemesh_matching/ahp.py",
+    "sha256": "a0d1f56037db807ca17d43560bdcd1132269c3e108b6a4b2b1138b8002722e66"
+  },
+  {
+    "path": "rolemesh_matching/engine.py",
+    "sha256": "45410561c911fc4c51e1b0e71b4b08b08be245f4b6d217dae1ec320feba88293"
+  },
+  {
+    "path": "rolemesh_matching/integration.py",
+    "sha256": "f6efda789c32b52432fa47d5432da336b226bb81eef23172fbb6617e8a453c19"
+  },
+  {
+    "path": "rolemesh_matching/schemas/error.schema.json",
+    "sha256": "8ba77c20c7910f2912809e69f5c558be55892cadeefa2d95c5fe5a68ec0313d5"
+  },
+  {
+    "path": "rolemesh_matching/schemas/input.schema.json",
+    "sha256": "5a4fb843d9e3b30981d9ae27267dc8ae42254509bf12bd7390a8d13ce4a3ac30"
+  },
+  {
+    "path": "rolemesh_matching/schemas/output.schema.json",
+    "sha256": "e3458cd5dbd86747ba171a66792d33c11ee5b38a90ff48eb416deb0a7f1306fe"
+  },
+  {
+    "path": "rolemesh_matching/semantic.py",
+    "sha256": "b31421582632c6bbc2762f4318570f7af804dde232b1515778cc4b9c09c597dd"
+  },
+  {
+    "path": "tests/test_contracts.py",
+    "sha256": "e438dd0061a9b78f34760beae00fc2269fd1314e8800d083c4f5ac62992cd37d"
+  },
+  {
+    "path": "tests/test_matching.py",
+    "sha256": "fe075bc52b1ab74963597193aa9abd5158155db147eded0110356e87c01df291"
+  },
+  {
+    "path": "先看这里.html",
+    "sha256": "0d23962308ae03602b5d355c906cb03a9180cbc0fe19d7c853c6102708dfbcef"
+  },
+  {
+    "path": "对接说明.html",
+    "sha256": "66e4b164b6069e2d1030531f852fe632372e7baf283bfc668003dafacb6f460b"
+  },
+  {
+    "path": "统一契约与联调.html",
+    "sha256": "5ac9c96c7bfc54b09f27aee33087d6fda6be14a8a7a34339e965f5dd20ffdab2"
+  }
+]

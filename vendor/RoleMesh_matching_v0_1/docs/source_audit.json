@@ -1,0 +1,57 @@
+{
+  "sources": [
+    {
+      "name": "RoleMesh_V0.1_匹配字段说明与对应关系.docx",
+      "sha256": "f4a50004c4da49a968bf225150c34632b13f8fc3636ad9e63257592e06b54a4d"
+    },
+    {
+      "name": "rolemesh.zip",
+      "sha256": "f5fe10a7a57dc425e3f8fc3e59a42aa3d08ed6b732180ceee75fa12ada42746c"
+    },
+    {
+      "name": "组队项目算法推荐.pdf",
+      "sha256": "9b8329585132009762899624d446eb14fc487389bc95ec9bdabb470af9963eea"
+    }
+  ],
+  "frontend": {
+    "file": "rolemesh/index.html",
+    "observed": [
+      {
+        "lines": "1992-2028",
+        "finding": "画像保存role:string、skills:string[]、field/coop/exp/time:string；自由文本未归一化"
+      },
+      {
+        "lines": "2212-2221",
+        "finding": "岗位保存name/bio/duty/skills/count/time；没有必需/加分分组"
+      },
+      {
+        "lines": "3680-3687",
+        "finding": "申请弹窗按字符串includes计算技能重合，不是正式算法"
+      },
+      {
+        "lines": "2348-2353",
+        "finding": "MY_PROFILES为内置示例，时间是4-8小时/周文案"
+      },
+      {
+        "lines": "2543-2555",
+        "finding": "matchRoles[].reasons读取为string[]，不能直接塞reasons对象"
+      }
+    ],
+    "network_calls_found": false
+  },
+  "source_conflict": "ZIP内映射表建议以前端命名为准，DOCX使用结构化算法字段。本包选择适配层保持两者，未将文档中的指令视为用户的新要求。",
+  "verification": "static source inspection; original frontend not browser-tested or connected to a real backend",
+  "pdf_review": {
+    "pages": 40,
+    "text_extracted": true,
+    "chinese_extraction_corrupted": true,
+    "relevant_pages_visually_reviewed": [
+      14,
+      23,
+      31,
+      37,
+      38
+    ],
+    "scope": "phase-one recommendations; advanced methods remain conditional extensions"
+  }
+}

@@ -1,0 +1,459 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RoleMesh V0.1 matching request",
+  "type": "object",
+  "properties": {
+    "profile": {
+      "$ref": "#/$defs/profile"
+    },
+    "roles": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/role"
+      }
+    },
+    "contract_version": {
+      "const": "0.1.0",
+      "description": "算法DTO契约版本；与数据库版本、算法版本分开"
+    }
+  },
+  "required": [
+    "profile",
+    "roles",
+    "contract_version"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "profile": {
+      "type": "object",
+      "properties": {
+        "profile_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "画像唯一标识"
+        },
+        "profile_version": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "画像版本，≥1"
+        },
+        "academic_year": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "当前年级代码"
+        },
+        "major": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "当前专业"
+        },
+        "intended_major": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "意向专业"
+        },
+        "skills": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "skill_code": {
+                "type": "string",
+                "minLength": 1
+              },
+              "level": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 1,
+                "maximum": 5
+              },
+              "assessment_source": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "skill_code",
+              "level",
+              "assessment_source"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "intended_roles": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "description": "意向角色代码"
+        },
+        "primary_role": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "首选角色，属于intended_roles"
+        },
+        "domain_interests": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "description": "领域兴趣代码"
+        },
+        "domain_preference_any": {
+          "type": "boolean",
+          "description": "明确无领域偏好"
+        },
+        "experience_level": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "经验档位"
+        },
+        "experience_summary": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "经历自述"
+        },
+        "availability_hours_per_week": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 168,
+          "description": "每周稳定投入小时，0—168"
+        },
+        "available_from": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "可开始时间代码"
+        },
+        "availability_reported_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time",
+          "description": "填报时间"
+        },
+        "collaboration_modes": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "remote",
+              "in_person",
+              "hybrid"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "collaboration_any": {
+          "type": "boolean",
+          "description": "明确接受全部协作方式"
+        },
+        "languages": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "description": "实际可协作语言代码"
+        },
+        "raw_fields": {
+          "type": "object",
+          "properties": {
+            "skills": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "field": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "coop": {
+              "type": "string"
+            },
+            "time": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "field_status": {
+          "type": "object",
+          "additionalProperties": {
+            "enum": [
+              "provided",
+              "unknown"
+            ]
+          },
+          "description": "新增扩展：区分已登记空列表与尚未确认的原文映射",
+          "propertyNames": {
+            "enum": [
+              "skills",
+              "intended_roles",
+              "domain_interests",
+              "languages",
+              "collaboration_modes",
+              "availability_hours_per_week",
+              "academic_year"
+            ]
+          }
+        }
+      },
+      "required": [
+        "profile_id",
+        "profile_version"
+      ],
+      "additionalProperties": false
+    },
+    "role": {
+      "type": "object",
+      "properties": {
+        "project_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "项目唯一ID"
+        },
+        "role_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "具体岗位唯一ID"
+        },
+        "role_version": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "要求版本，≥1"
+        },
+        "role_code": {
+          "type": "string",
+          "minLength": 1,
+          "description": "通用角色代码"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "岗位展示名称"
+        },
+        "duty": {
+          "type": "string",
+          "minLength": 1,
+          "description": "岗位职责"
+        },
+        "project_domains": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "description": "项目领域代码"
+        },
+        "recruitment_status": {
+          "type": "string",
+          "minLength": 1,
+          "description": "open / paused / closed / full",
+          "enum": [
+            "open",
+            "paused",
+            "closed",
+            "full"
+          ]
+        },
+        "openings_remaining": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "剩余名额，≥0"
+        },
+        "required_skills": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "skill_code": {
+                "type": "string",
+                "minLength": 1
+              },
+              "min_level": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 1,
+                "maximum": 5
+              }
+            },
+            "required": [
+              "skill_code",
+              "min_level"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "preferred_skills": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "skill_code": {
+                "type": "string",
+                "minLength": 1
+              },
+              "min_level": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 1,
+                "maximum": 5
+              }
+            },
+            "required": [
+              "skill_code",
+              "min_level"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "min_hours_per_week": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 168,
+          "description": "最低小时/周，0—168"
+        },
+        "preferred_hours_per_week": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 168,
+          "description": "期望小时/周，0—168"
+        },
+        "start_within_days": {
+          "type": "null"
+        },
+        "allowed_collaboration_modes": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "remote",
+              "in_person",
+              "hybrid"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "collaboration_is_required": {
+          "type": "boolean",
+          "description": "协作方式是否硬条件"
+        },
+        "required_languages": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "description": "协作语言要求"
+        },
+        "language_requirement_mode": {
+          "type": "string",
+          "minLength": 1,
+          "description": "any / all",
+          "enum": [
+            "any",
+            "all"
+          ]
+        },
+        "language_is_required": {
+          "type": "boolean",
+          "description": "语言是否硬条件"
+        },
+        "allowed_academic_years": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "description": "允许年级代码"
+        },
+        "allowed_major_codes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "maxItems": 0
+        },
+        "raw_fields": {
+          "type": "object",
+          "properties": {
+            "preferred_skills": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "project_domains": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "project_id",
+        "role_id",
+        "role_version",
+        "role_code",
+        "project_domains",
+        "recruitment_status",
+        "openings_remaining",
+        "required_skills",
+        "preferred_skills",
+        "min_hours_per_week",
+        "preferred_hours_per_week",
+        "allowed_collaboration_modes",
+        "collaboration_is_required",
+        "required_languages",
+        "language_requirement_mode",
+        "language_is_required",
+        "allowed_academic_years",
+        "allowed_major_codes"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

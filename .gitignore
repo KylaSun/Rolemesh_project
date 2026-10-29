@@ -13,3 +13,9 @@ __pycache__/
 
 # 系统文件
 .DS_Store
+# 本地复制恢复备份和安装元数据
+.local-copy-recovery/
+*.egg-info/
+build/
+28217843_202610161909197743.csv
+28217843_202610161909197743.numbers

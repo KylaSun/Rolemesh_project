@@ -36,6 +36,24 @@ def init_db():
                     FOREIGN KEY (user_id) REFERENCES users(user_id)
                 );
             """)
+        connection.execute(
+            "CREATE TABLE IF NOT EXISTS schema_migrations "
+            "(version TEXT PRIMARY KEY, applied_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP)"
+        )
+        connection.commit()
+        for migration in sorted((Path(__file__).resolve().parent / "migrations").glob("*.sql")):
+            version = migration.stem
+            if connection.execute("SELECT 1 FROM schema_migrations WHERE version = ?", (version,)).fetchone():
+                continue
+            safe_version = version.replace("'", "''")
+            try:
+                connection.executescript(
+                    "BEGIN IMMEDIATE;\n" + migration.read_text(encoding="utf-8")
+                    + "\nINSERT INTO schema_migrations(version) VALUES ('" + safe_version + "');\nCOMMIT;"
+                )
+            except Exception:
+                connection.rollback()
+                raise
     finally:
         connection.close()
 

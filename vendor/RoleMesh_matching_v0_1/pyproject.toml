@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rolemesh-matching"
+version = "0.1.0"
+description = "RoleMesh rules, AHP scoring and optional GTE soft-text matching"
+requires-python = ">=3.10"
+dependencies = ["jsonschema>=4.18,<5"]
+
+[project.optional-dependencies]
+gte = ["sentence-transformers>=3.0,<6", "huggingface-hub>=0.24,<2"]
+
+[tool.setuptools.packages.find]
+include = ["rolemesh_matching*"]
+
+[tool.setuptools.package-data]
+rolemesh_matching = ["schemas/*.json"]

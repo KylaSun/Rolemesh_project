@@ -1,0 +1,70 @@
+{
+  "status": "示例起始代码，不是完整词表；只对明确同义词做精确映射，未识别内容保留原文、待确认",
+  "skills": [
+    {
+      "code": "skill.python",
+      "label": "Python",
+      "aliases": [
+        "python"
+      ]
+    },
+    {
+      "code": "skill.react",
+      "label": "React",
+      "aliases": [
+        "react",
+        "react.js",
+        "reactjs"
+      ]
+    },
+    {
+      "code": "skill.typescript",
+      "label": "TypeScript",
+      "aliases": [
+        "typescript"
+      ]
+    },
+    {
+      "code": "skill.sql",
+      "label": "SQL",
+      "aliases": [
+        "sql"
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "code": "role.frontend",
+      "label": "前端开发"
+    },
+    {
+      "code": "role.algorithm",
+      "label": "算法"
+    }
+  ],
+  "domains": [
+    {
+      "code": "domain.education",
+      "label": "教育科技"
+    },
+    {
+      "code": "domain.community",
+      "label": "社区服务"
+    }
+  ],
+  "languages": [
+    {
+      "code": "zh",
+      "label": "中文"
+    },
+    {
+      "code": "en",
+      "label": "英语"
+    }
+  ],
+  "notes": [
+    "用户“想学React”不能通过包含React就映射为掌握技能。",
+    "前端“开发”不自动等于“前端开发”；自定义角色需确认。",
+    "未知技能不应被删除；skills设为unknown并保留raw_fields，待用户确认结构化标签。"
+  ]
+}

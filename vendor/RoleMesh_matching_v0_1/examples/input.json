@@ -1,0 +1,213 @@
+{
+  "profile": {
+    "profile_id": "profile.demo.1",
+    "profile_version": 1,
+    "academic_year": "year.2",
+    "major": null,
+    "intended_major": null,
+    "skills": [
+      {
+        "skill_code": "skill.react",
+        "level": 3,
+        "assessment_source": "self_reported"
+      },
+      {
+        "skill_code": "skill.typescript",
+        "level": 2,
+        "assessment_source": "self_reported"
+      }
+    ],
+    "intended_roles": [
+      "role.frontend",
+      "role.algorithm"
+    ],
+    "primary_role": "role.frontend",
+    "domain_interests": [
+      "domain.education"
+    ],
+    "domain_preference_any": false,
+    "experience_level": null,
+    "experience_summary": "示例自述，不用于推断额外技能",
+    "availability_hours_per_week": 6,
+    "available_from": null,
+    "availability_reported_at": null,
+    "collaboration_modes": [
+      "remote"
+    ],
+    "collaboration_any": false,
+    "languages": [
+      "zh"
+    ],
+    "field_status": {
+      "skills": "provided",
+      "intended_roles": "provided",
+      "domain_interests": "provided",
+      "languages": "provided",
+      "collaboration_modes": "provided"
+    },
+    "raw_fields": {
+      "skills": [
+        "React",
+        "TypeScript"
+      ],
+      "field": "校园学习工具",
+      "role": "前端开发 / 算法",
+      "time": "4-8 小时/周",
+      "coop": "线上协作"
+    }
+  },
+  "roles": [
+    {
+      "project_id": "project.education",
+      "role_id": "role.education.frontend",
+      "role_version": 1,
+      "role_code": "role.frontend",
+      "name": "前端开发",
+      "duty": "实现页面交互",
+      "project_domains": [
+        "domain.education"
+      ],
+      "recruitment_status": "open",
+      "openings_remaining": 2,
+      "required_skills": [
+        {
+          "skill_code": "skill.react",
+          "min_level": 3
+        }
+      ],
+      "preferred_skills": [
+        {
+          "skill_code": "skill.typescript",
+          "min_level": 4
+        }
+      ],
+      "min_hours_per_week": 4,
+      "preferred_hours_per_week": 8,
+      "start_within_days": null,
+      "allowed_collaboration_modes": [
+        "remote"
+      ],
+      "collaboration_is_required": true,
+      "required_languages": [
+        "zh"
+      ],
+      "language_requirement_mode": "all",
+      "language_is_required": true,
+      "allowed_academic_years": [],
+      "allowed_major_codes": []
+    },
+    {
+      "project_id": "project.community",
+      "role_id": "role.community.frontend",
+      "role_version": 1,
+      "role_code": "role.frontend",
+      "name": "社区工具开发",
+      "duty": "实现页面交互",
+      "project_domains": [
+        "domain.community"
+      ],
+      "recruitment_status": "open",
+      "openings_remaining": 2,
+      "required_skills": [
+        {
+          "skill_code": "skill.react",
+          "min_level": 3
+        }
+      ],
+      "preferred_skills": [
+        {
+          "skill_code": "skill.typescript",
+          "min_level": 4
+        }
+      ],
+      "min_hours_per_week": 4,
+      "preferred_hours_per_week": 6,
+      "start_within_days": null,
+      "allowed_collaboration_modes": [
+        "remote"
+      ],
+      "collaboration_is_required": true,
+      "required_languages": [
+        "zh"
+      ],
+      "language_requirement_mode": "all",
+      "language_is_required": true,
+      "allowed_academic_years": [],
+      "allowed_major_codes": []
+    },
+    {
+      "project_id": "project.education",
+      "role_id": "role.education.closed",
+      "role_version": 1,
+      "role_code": "role.frontend",
+      "name": "已关闭岗位",
+      "duty": "实现页面交互",
+      "project_domains": [
+        "domain.education"
+      ],
+      "recruitment_status": "closed",
+      "openings_remaining": 2,
+      "required_skills": [
+        {
+          "skill_code": "skill.react",
+          "min_level": 3
+        }
+      ],
+      "preferred_skills": [
+        {
+          "skill_code": "skill.typescript",
+          "min_level": 4
+        }
+      ],
+      "min_hours_per_week": 4,
+      "preferred_hours_per_week": 8,
+      "start_within_days": null,
+      "allowed_collaboration_modes": [
+        "remote"
+      ],
+      "collaboration_is_required": true,
+      "required_languages": [
+        "zh"
+      ],
+      "language_requirement_mode": "all",
+      "language_is_required": true,
+      "allowed_academic_years": [],
+      "allowed_major_codes": []
+    },
+    {
+      "project_id": "project.research",
+      "role_id": "role.research.python",
+      "role_version": 1,
+      "role_code": "role.algorithm",
+      "name": "算法研究",
+      "duty": "实现页面交互",
+      "project_domains": [
+        "domain.education"
+      ],
+      "recruitment_status": "open",
+      "openings_remaining": 2,
+      "required_skills": [
+        {
+          "skill_code": "skill.python",
+          "min_level": 3
+        }
+      ],
+      "preferred_skills": [],
+      "min_hours_per_week": 4,
+      "preferred_hours_per_week": 8,
+      "start_within_days": null,
+      "allowed_collaboration_modes": [
+        "remote"
+      ],
+      "collaboration_is_required": true,
+      "required_languages": [
+        "zh"
+      ],
+      "language_requirement_mode": "all",
+      "language_is_required": true,
+      "allowed_academic_years": [],
+      "allowed_major_codes": []
+    }
+  ],
+  "contract_version": "0.1.0"
+}
