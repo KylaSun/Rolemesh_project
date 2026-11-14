@@ -188,6 +188,20 @@ class DemoApiTests(unittest.TestCase):
         role = next(r for r in body["data"]["roles"] if r["role_id"] == "role.education.frontend")
         self.assertEqual(role["recruitment_status"], "paused")
 
+    def test_demo_seed_refuses_user_id_collision(self):
+        c = database.get_connection()
+        try:
+            with c:
+                c.execute("DELETE FROM talent_profiles WHERE profile_id = ?", ("profile.demo.1",))
+                c.execute(
+                    "UPDATE users SET display_name = ? WHERE user_id = ?",
+                    ("真实用户", "user.demo.1"),
+                )
+        finally:
+            c.close()
+        with self.assertRaisesRegex(ValueError, "Demo user ID collides"):
+            seed_demo()
+
     def test_openapi_exposes_demo_endpoint(self):
         code, body, _ = self.request("/openapi.json")
         self.assertEqual(code, 200)

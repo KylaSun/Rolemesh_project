@@ -40,6 +40,20 @@ def seed_demo():
 
     try:
         with connection:
+            existing_user = connection.execute(
+                "SELECT display_name FROM users WHERE user_id = ?",
+                ("user.demo.1",),
+            ).fetchone()
+            if existing_user and existing_user["display_name"] != "虚构测试用户":
+                raise ValueError("Demo user ID collides with a different user")
+
+            existing_profile = connection.execute(
+                "SELECT user_id FROM talent_profiles WHERE profile_id = ?",
+                (profile["profile_id"],),
+            ).fetchone()
+            if existing_profile and existing_profile["user_id"] != "user.demo.1":
+                raise ValueError("Demo profile ID collides with a different user")
+
             connection.execute(
                 """
                 INSERT INTO users (
