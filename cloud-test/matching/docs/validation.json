@@ -1,0 +1,69 @@
+{
+  "python_runtime": "CPython 3.12 bundled runtime + workspace-only jsonschema dependencies",
+  "frontend_adapter_checks": {
+    "passed": 6,
+    "failed": 0
+  },
+  "python_compilation": "passed",
+  "demo": {
+    "executed": true,
+    "project_scores": [
+      74,
+      61
+    ],
+    "formal_roles": 2,
+    "comparisons": 4
+  },
+  "gte": {
+    "adapter_tested": true,
+    "real_model_downloaded": false,
+    "real_inference_tested": false,
+    "semantic_quality_calibrated": false
+  },
+  "original_frontend": {
+    "source_reviewed": true,
+    "real_backend_connected": false,
+    "browser_interactions_tested": false
+  },
+  "database_and_permissions": {
+    "implemented_in_this_package": false,
+    "responsibility": "Kyla backend"
+  },
+  "documentation": {
+    "local_links_checked": 24,
+    "top_level_example_fields_checked": true,
+    "full_json_schema_validator_run": true,
+    "html_visual_render_verified": false
+  },
+  "updated_date": "2026-10-20",
+  "contract_version": "0.1.0",
+  "rules_and_contract_tests": {
+    "passed": 40,
+    "failed": 0
+  },
+  "shared_contract_fixtures": {
+    "passed": 13,
+    "failed": 0
+  },
+  "frontend_state_fixture_checks": {
+    "passed": 13,
+    "failed": 0
+  },
+  "contract_validation": {
+    "input_schema": true,
+    "success_output_schema": true,
+    "error_output_schema": true,
+    "packaged_schema_copies_identical": true
+  },
+  "team_confirmation": {
+    "qi": false,
+    "jie": false,
+    "actual_endpoint_and_auth": "pending",
+    "real_end_to_end_integration": false
+  },
+  "pdf_reference": {
+    "reviewed": true,
+    "advanced_game_theory_implemented": false,
+    "bayesian_learning_implemented": false
+  }
+}

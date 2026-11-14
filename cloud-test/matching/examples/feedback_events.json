@@ -1,0 +1,62 @@
+[
+  {
+    "event_version": "1.0.0",
+    "event_id": "rec.example",
+    "idempotency_key": "request.example/profile.example/role.example",
+    "event_type": "recommendation_generated",
+    "occurred_at": "2026-11-08T10:00:00Z",
+    "actor_user_id": "user.example",
+    "subject_user_id": "user.example",
+    "profile_id": "profile.example",
+    "project_id": "project.example",
+    "role_id": "role.example",
+    "recommendation_id": "rec.example",
+    "algorithm_version": "0.1.1-draft",
+    "profile_version": 1,
+    "role_version": 1
+  },
+  {
+    "event_version": "1.0.0",
+    "event_id": "application.event.example",
+    "idempotency_key": "application.example/submitted",
+    "event_type": "application_submitted",
+    "occurred_at": "2026-11-08T10:01:00Z",
+    "actor_user_id": "user.example",
+    "subject_user_id": "user.example",
+    "profile_id": "profile.example",
+    "project_id": "project.example",
+    "role_id": "role.example",
+    "recommendation_id": "rec.example",
+    "application_id": "application.example"
+  },
+  {
+    "event_version": "1.0.0",
+    "event_id": "member.event.example",
+    "idempotency_key": "membership.example/confirmed",
+    "event_type": "member_confirmed",
+    "occurred_at": "2026-11-08T10:02:00Z",
+    "actor_user_id": "user.example",
+    "subject_user_id": "user.example",
+    "profile_id": "profile.example",
+    "project_id": "project.example",
+    "role_id": "role.example",
+    "recommendation_id": "rec.example",
+    "application_id": "application.example",
+    "membership_id": "membership.example"
+  },
+  {
+    "event_version": "1.0.0",
+    "event_id": "feedback.example",
+    "idempotency_key": "feedback.example",
+    "event_type": "feedback_recorded",
+    "occurred_at": "2026-11-08T10:03:00Z",
+    "actor_user_id": "user.example",
+    "subject_user_id": "user.example",
+    "profile_id": "profile.example",
+    "project_id": "project.example",
+    "role_id": "role.example",
+    "recommendation_id": "rec.example",
+    "feedback": "useful",
+    "reason_code": "skills"
+  }
+]

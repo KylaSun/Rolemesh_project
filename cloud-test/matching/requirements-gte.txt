@@ -1,0 +1,5 @@
+# Optional semantic inference only; these packages are NOT required for demo.py.
+# Supported ranges below are installation guidance, not a verified lock file.
+-r requirements.txt
+sentence-transformers>=3.0,<6
+huggingface-hub>=0.24,<2

@@ -1,0 +1,257 @@
+{
+  "status": "implementation draft based on supplied DOCX; frontend additions need implementation",
+  "profile": [
+    {
+      "field": "profile_id",
+      "type": "string",
+      "meaning": "画像唯一标识",
+      "use": "关联结果，不评分"
+    },
+    {
+      "field": "profile_version",
+      "type": "integer",
+      "meaning": "画像版本，≥1",
+      "use": "修改画像时后端递增"
+    },
+    {
+      "field": "academic_year",
+      "type": "string / null",
+      "meaning": "当前年级代码",
+      "use": "有年级限制时筛选"
+    },
+    {
+      "field": "major",
+      "type": "string / null",
+      "meaning": "当前专业",
+      "use": "第一版不评分、不启用专业限制"
+    },
+    {
+      "field": "intended_major",
+      "type": "string / null",
+      "meaning": "意向专业",
+      "use": "不等于当前专业或能力"
+    },
+    {
+      "field": "skills",
+      "type": "object[]",
+      "meaning": "已登记并确认映射的技能",
+      "use": "必需筛选及加分比较；原文放raw_fields"
+    },
+    {
+      "field": "intended_roles",
+      "type": "string[]",
+      "meaning": "意向角色代码",
+      "use": "80分命中"
+    },
+    {
+      "field": "primary_role",
+      "type": "string / null",
+      "meaning": "首选角色，属于intended_roles",
+      "use": "100分命中，前端需明确采集"
+    },
+    {
+      "field": "domain_interests",
+      "type": "string[]",
+      "meaning": "领域兴趣代码",
+      "use": "计算项目领域覆盖比例"
+    },
+    {
+      "field": "domain_preference_any",
+      "type": "boolean",
+      "meaning": "明确无领域偏好",
+      "use": "本项不参与加权，不自动满分"
+    },
+    {
+      "field": "experience_level",
+      "type": "string / null",
+      "meaning": "经验档位",
+      "use": "第一版不计分"
+    },
+    {
+      "field": "experience_summary",
+      "type": "string / null",
+      "meaning": "经历自述",
+      "use": "仅展示，不推断能力"
+    },
+    {
+      "field": "availability_hours_per_week",
+      "type": "number / null",
+      "meaning": "每周稳定投入小时，0—168",
+      "use": "最低筛选＋期望时间评分"
+    },
+    {
+      "field": "available_from",
+      "type": "string / null",
+      "meaning": "可开始时间代码",
+      "use": "第一版不启用"
+    },
+    {
+      "field": "availability_reported_at",
+      "type": "datetime / null",
+      "meaning": "填报时间",
+      "use": "保留，第一版不启用相对日期判断"
+    },
+    {
+      "field": "collaboration_modes",
+      "type": "string[]",
+      "meaning": "remote / in_person / hybrid",
+      "use": "按岗位开关判断"
+    },
+    {
+      "field": "collaboration_any",
+      "type": "boolean",
+      "meaning": "明确接受全部协作方式",
+      "use": "兼容岗位要求"
+    },
+    {
+      "field": "languages",
+      "type": "string[]",
+      "meaning": "实际可协作语言代码",
+      "use": "按any/all判断"
+    }
+  ],
+  "role": [
+    {
+      "field": "project_id",
+      "type": "string",
+      "meaning": "项目唯一ID",
+      "use": "关联与项目汇总"
+    },
+    {
+      "field": "role_id",
+      "type": "string",
+      "meaning": "具体岗位唯一ID",
+      "use": "不要用role_code替代"
+    },
+    {
+      "field": "role_version",
+      "type": "integer",
+      "meaning": "要求版本，≥1",
+      "use": "项目条件变化也需更新"
+    },
+    {
+      "field": "role_code",
+      "type": "string",
+      "meaning": "通用角色代码",
+      "use": "角色意向比较"
+    },
+    {
+      "field": "name",
+      "type": "string",
+      "meaning": "岗位展示名称",
+      "use": "不参与评分"
+    },
+    {
+      "field": "duty",
+      "type": "string",
+      "meaning": "岗位职责",
+      "use": "不等同专业要求"
+    },
+    {
+      "field": "project_domains",
+      "type": "string[]",
+      "meaning": "项目领域代码",
+      "use": "领域评分"
+    },
+    {
+      "field": "recruitment_status",
+      "type": "string",
+      "meaning": "open / paused / closed / full",
+      "use": "仅open进入候选"
+    },
+    {
+      "field": "openings_remaining",
+      "type": "integer",
+      "meaning": "剩余名额，≥0",
+      "use": "必须大于0；不是招募总人数"
+    },
+    {
+      "field": "required_skills",
+      "type": "object[]",
+      "meaning": "必须具备的技能",
+      "use": "逐项满足，未知单独处理"
+    },
+    {
+      "field": "preferred_skills",
+      "type": "object[]",
+      "meaning": "加分技能",
+      "use": "平均满足度；不满足不淘汰"
+    },
+    {
+      "field": "min_hours_per_week",
+      "type": "number / null",
+      "meaning": "最低小时/周，0—168",
+      "use": "硬条件；null未设限制"
+    },
+    {
+      "field": "preferred_hours_per_week",
+      "type": "number / null",
+      "meaning": "期望小时/周，0—168",
+      "use": "时间评分；null或0不评分"
+    },
+    {
+      "field": "start_within_days",
+      "type": "integer / null",
+      "meaning": "最迟几天内开始",
+      "use": "本版只能传null，其他值明确报错"
+    },
+    {
+      "field": "allowed_collaboration_modes",
+      "type": "string[]",
+      "meaning": "可接受协作方式",
+      "use": "开启硬条件时不能为空"
+    },
+    {
+      "field": "collaboration_is_required",
+      "type": "boolean",
+      "meaning": "协作方式是否硬条件",
+      "use": "false时本版不评分"
+    },
+    {
+      "field": "required_languages",
+      "type": "string[]",
+      "meaning": "协作语言要求",
+      "use": "开启硬条件时不能为空"
+    },
+    {
+      "field": "language_requirement_mode",
+      "type": "string",
+      "meaning": "any / all",
+      "use": "会一种或全部需要"
+    },
+    {
+      "field": "language_is_required",
+      "type": "boolean",
+      "meaning": "语言是否硬条件",
+      "use": "false时本版不评分"
+    },
+    {
+      "field": "allowed_academic_years",
+      "type": "string[]",
+      "meaning": "允许年级代码",
+      "use": "[]不限制"
+    },
+    {
+      "field": "allowed_major_codes",
+      "type": "string[]",
+      "meaning": "允许专业代码",
+      "use": "本版只接受[]，其他值报错"
+    }
+  ],
+  "extensions": {
+    "profile.raw_fields": "保留原始技能、领域、角色、时间、协作文本",
+    "profile.field_status": "明确结构化字段是provided还是unknown",
+    "role.raw_fields": "提供可用于软性语义比较的加分技能原文和项目领域原文"
+  },
+  "skill_objects": {
+    "profile": [
+      "skill_code:string",
+      "level:integer 1..5 or null",
+      "assessment_source:string"
+    ],
+    "role": [
+      "skill_code:string",
+      "min_level:integer 1..5 or null"
+    ]
+  }
+}

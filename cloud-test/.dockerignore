@@ -1,0 +1,13 @@
+**
+!requirements.txt
+!matching/
+!matching/**
+!backend/
+!backend/**
+**/*.db*
+**/*.sqlite*
+**/*.csv
+**/*.numbers
+**/.env*
+**/__pycache__
+**/*.egg-info

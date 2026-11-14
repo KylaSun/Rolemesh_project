@@ -1,0 +1,226 @@
+[
+  {
+    "path": "contracts/codebook_seed.json",
+    "sha256": "d3f04df1984390826a25857836c27490b43ca067051d7061485c31ead6fa2d2b"
+  },
+  {
+    "path": "contracts/error.schema.json",
+    "sha256": "df58680590b3493baca568050b2187b245a9c4f3730e2051b722002e77bd09f4"
+  },
+  {
+    "path": "contracts/event.schema.json",
+    "sha256": "9baf539f581c2423e493ebc37fc9e9aed9e0f3b05f05615373e14dc5b65314c4"
+  },
+  {
+    "path": "contracts/field_dictionary.json",
+    "sha256": "abd130ce6c3f649d06cea8623cb02d174039237464fc3024ec51f2452db22227"
+  },
+  {
+    "path": "contracts/input.schema.json",
+    "sha256": "569fb1e52c45be3b767092690f6556027e5a37d083ad94321d8901b44715db16"
+  },
+  {
+    "path": "contracts/output.schema.json",
+    "sha256": "fb3c9a113f4fac2d5557509e50f7cd293773181dd5ecad1fa55bba6616e4150d"
+  },
+  {
+    "path": "contracts/profiles-input.schema.json",
+    "sha256": "b9527a53e1f00261a1a2fead57f96eed8c4ec111f6e24b12b21846772f6eb4d1"
+  },
+  {
+    "path": "contracts/profiles-output.schema.json",
+    "sha256": "827731b546a960fcefcb2947307bdcd79070629b76b176d3014159e0477b4f98"
+  },
+  {
+    "path": "demo.py",
+    "sha256": "925174def85e715069675d59fe831ffdd96b4083f72cdc862989b441ef1c0fac"
+  },
+  {
+    "path": "demo_gte.py",
+    "sha256": "ec32403f3a9e32fa4eda720d83c230ee50bb3d660ff030b7cdc749fdd8bf0602"
+  },
+  {
+    "path": "docs/source_audit.json",
+    "sha256": "931548224b4773460a277426e341f214b5cac7313d87707a14b5a007324a8a9c"
+  },
+  {
+    "path": "docs/validation.json",
+    "sha256": "a236db1a7f323d404c2d5cec0cfe5d54434cb9ad65b743e062b708b777084173"
+  },
+  {
+    "path": "download_model.py",
+    "sha256": "5e75ebb400d0c0e4a95543b5563d73416a6938cdee85b13d58db428b4eff9df1"
+  },
+  {
+    "path": "examples/ahp.json",
+    "sha256": "179001063223d61d975dd1722deab8507de15501dbcdd455372420077325ac0d"
+  },
+  {
+    "path": "examples/contract_cases.json",
+    "sha256": "b5b1049f2fcfb8aa785461a83b5ec426309f8f8a4c64343fd2174d6a7424b992"
+  },
+  {
+    "path": "examples/contract_results.json",
+    "sha256": "631777ed11661d7af93cceb09813fa7ed07dc64409fce788641ebbf3cda9765d"
+  },
+  {
+    "path": "examples/conversion_expected.json",
+    "sha256": "6c881102d1ff0fb5f386655b5286a2e663fb837b43e11d8233577a9ecb9067e4"
+  },
+  {
+    "path": "examples/feedback_events.json",
+    "sha256": "4103dde81a0a1e086031f729149dbd693a568d1825b91dd9849c27466394be43"
+  },
+  {
+    "path": "examples/frontend_raw.json",
+    "sha256": "34de932c2c62295a22e1948669029980228def80063f79fa6a416d3cb1725fdc"
+  },
+  {
+    "path": "examples/input.json",
+    "sha256": "3391672e0b78f92aecf2dfcde88909c8e292f4e17fb80e8c839aa6b09e58f0b8"
+  },
+  {
+    "path": "examples/input_semantic.json",
+    "sha256": "774468a40f9109d252e42e2a440743fa54cf6d64bbb0096c0d57c944e6391f0d"
+  },
+  {
+    "path": "examples/output.json",
+    "sha256": "8fae53a06a92987865c5ac67bfc6170b805b8154d5f0642a0563671b2dcbe1fb"
+  },
+  {
+    "path": "examples/profiles_input.json",
+    "sha256": "17d5f411ae32259b1d4744f3f822a4b5b7ac1e3ef791889965717a422f338c6a"
+  },
+  {
+    "path": "examples/profiles_output.json",
+    "sha256": "f0da6985a09c1e411dae7e7d47afbc46536c5883fd99f02a9416c74b9ecce095"
+  },
+  {
+    "path": "frontend/bridge.mjs",
+    "sha256": "d000b78a1e1c9cfa4e19a84f6adcf9fd9b5c2d842084af559de2a383c1f05d19"
+  },
+  {
+    "path": "frontend/test_bridge.mjs",
+    "sha256": "9c33d6c91d22686dc42ec05f6709fb0fdbe90da2085f3faa464f3573ea635d81"
+  },
+  {
+    "path": "frontend/test_profiles.mjs",
+    "sha256": "abdf1ba4488368d4b59ba5785ef26c8cc71838367bf1743b31c546bc759508e5"
+  },
+  {
+    "path": "frontend/test_states.mjs",
+    "sha256": "e4bcdcf09078614f78c0d13266ef68a5d1014c349ad4713bc6304951d1802b28"
+  },
+  {
+    "path": "pyproject.toml",
+    "sha256": "32bedfd69db909b751e8e65ab266d219af5ac9a56103e0479bf684bd68a06746"
+  },
+  {
+    "path": "README.txt",
+    "sha256": "0bf0e6a9d308789464e98ceeca3dc858633ac8f00acad9b03542eb248c12c3c2"
+  },
+  {
+    "path": "references/组队项目算法推荐.pdf",
+    "sha256": "9b8329585132009762899624d446eb14fc487389bc95ec9bdabb470af9963eea"
+  },
+  {
+    "path": "requirements-gte.txt",
+    "sha256": "02068a9f278f7bf85309a91df73392c8d4378dfc15d69e6e29e405dfcef93363"
+  },
+  {
+    "path": "requirements.txt",
+    "sha256": "fd123426f1e503af1b8ed541ea04dfafd22d300a12b7a1e45b3b431cdaa85ea2"
+  },
+  {
+    "path": "rolemesh_matching/__init__.py",
+    "sha256": "82edba96a89110f19a59ec0f03d924a7c63fbd56e3723cf23733acd5c3a2ae11"
+  },
+  {
+    "path": "rolemesh_matching/ahp.py",
+    "sha256": "63d825d9848343bbb5d7e62bd43f2518fde6071fbafcf2bad3b7d922555badd6"
+  },
+  {
+    "path": "rolemesh_matching/data/codebook_seed.json",
+    "sha256": "d3f04df1984390826a25857836c27490b43ca067051d7061485c31ead6fa2d2b"
+  },
+  {
+    "path": "rolemesh_matching/engine.py",
+    "sha256": "c8fb9f5eed4037a65cd7149c05b4330481649852fbcff59a5b38c77824be1263"
+  },
+  {
+    "path": "rolemesh_matching/events.py",
+    "sha256": "b6191faab18be63ea91b941b7ad792cdd146c9ece7d0af678c5d379cffd714f8"
+  },
+  {
+    "path": "rolemesh_matching/integration.py",
+    "sha256": "e6f96bc5f79d37e2dd916565890dc79288860105679faef4eeb3cccffcceccd9"
+  },
+  {
+    "path": "rolemesh_matching/normalization.py",
+    "sha256": "42fd9cc21e9d11fa037069b382636f35a10496f3a94f0df06f1f11b6f35fb0a0"
+  },
+  {
+    "path": "rolemesh_matching/schemas/error.schema.json",
+    "sha256": "df58680590b3493baca568050b2187b245a9c4f3730e2051b722002e77bd09f4"
+  },
+  {
+    "path": "rolemesh_matching/schemas/event.schema.json",
+    "sha256": "9baf539f581c2423e493ebc37fc9e9aed9e0f3b05f05615373e14dc5b65314c4"
+  },
+  {
+    "path": "rolemesh_matching/schemas/input.schema.json",
+    "sha256": "569fb1e52c45be3b767092690f6556027e5a37d083ad94321d8901b44715db16"
+  },
+  {
+    "path": "rolemesh_matching/schemas/output.schema.json",
+    "sha256": "fb3c9a113f4fac2d5557509e50f7cd293773181dd5ecad1fa55bba6616e4150d"
+  },
+  {
+    "path": "rolemesh_matching/schemas/profiles-input.schema.json",
+    "sha256": "b9527a53e1f00261a1a2fead57f96eed8c4ec111f6e24b12b21846772f6eb4d1"
+  },
+  {
+    "path": "rolemesh_matching/schemas/profiles-output.schema.json",
+    "sha256": "827731b546a960fcefcb2947307bdcd79070629b76b176d3014159e0477b4f98"
+  },
+  {
+    "path": "rolemesh_matching/semantic.py",
+    "sha256": "4f9d3d6dca7adbfac2398c474bdf5eae1e7d996234ef1704f7713a79e995fc9f"
+  },
+  {
+    "path": "rolemesh_matching/service.py",
+    "sha256": "e22b5509c119fd069fe2c83318f9892b011075569fa17dec59b06e50180b1d40"
+  },
+  {
+    "path": "rolemesh_matching/sql/001_matching_events.sql",
+    "sha256": "3fd383b03ca48da34085b4881c0735860a8ef9b58057e961ee22fd3117c3cc62"
+  },
+  {
+    "path": "run_scenarios.py",
+    "sha256": "894b891799ffcb216d3f88cc5a1a0f5149749953a5b36244edc533031bff281b"
+  },
+  {
+    "path": "tests/test_bidirectional.py",
+    "sha256": "132c41135668ccde99a91725f7f398a17acf5dabdd28e294481a9010fdc26024"
+  },
+  {
+    "path": "tests/test_contracts.py",
+    "sha256": "ae1818cae6db4de33f463b794fb3295ee154aca0184234c659ca3aaefa9540eb"
+  },
+  {
+    "path": "tests/test_events.py",
+    "sha256": "7d8fb8a44dbe7a0db33d67ca235f575f3e6607bbbc9e0f167b1970c0451e426a"
+  },
+  {
+    "path": "tests/test_matching.py",
+    "sha256": "6c6f2fb93dd3de647513fb2906d6a4399e38f4e37a8ce69bd71446e1bb21f7f0"
+  },
+  {
+    "path": "tests/test_regression.py",
+    "sha256": "d3dda7376f7b88d1cbdb3cd2853af68469a4210a64f3e483ee649f21608e6aa4"
+  },
+  {
+    "path": "tests/test_scoring_invariants.py",
+    "sha256": "5d8ee9597c0ce27b4235653b37ee669dcc5885462f569f68cd05b1645e1c0fdf"
+  }
+]

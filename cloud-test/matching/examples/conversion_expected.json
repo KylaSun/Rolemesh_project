@@ -1,0 +1,9 @@
+{
+  "recommendations": 1,
+  "applications": 1,
+  "memberships": 1,
+  "feedback_events": 1,
+  "recommendation_to_application": 1.0,
+  "application_to_membership": 1.0,
+  "recommendation_to_membership": 1.0
+}

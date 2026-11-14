@@ -1,0 +1,1997 @@
+[
+  {
+    "id": "normal",
+    "response": {
+      "recommendations": [
+        {
+          "profile_id": "profile.demo.1",
+          "project_id": "project.education",
+          "role_id": "role.education.frontend",
+          "eligibility": "eligible",
+          "match": 74,
+          "provisional_match": null,
+          "scoring_status": "complete",
+          "scoring_coverage": 1.0,
+          "component_scores": {
+            "skills": {
+              "status": "scored",
+              "score": 50.0,
+              "method": "codes_and_levels"
+            },
+            "role": {
+              "status": "scored",
+              "score": 100.0,
+              "method": "codes"
+            },
+            "domain": {
+              "status": "scored",
+              "score": 100.0,
+              "method": "codes"
+            },
+            "time": {
+              "status": "scored",
+              "score": 75.0,
+              "method": "hours_ratio"
+            }
+          },
+          "effective_weights": {
+            "skills": 0.46729598278091244,
+            "role": 0.27718059061096517,
+            "domain": 0.16008847502439438,
+            "time": 0.09543495158372808
+          },
+          "reasons": [
+            {
+              "code": "recruitment",
+              "label": "条件满足",
+              "text": "岗位需开放且有剩余名额"
+            },
+            {
+              "code": "required:skill.react",
+              "label": "条件满足",
+              "text": "必需技能 skill.react，最低等级 3"
+            },
+            {
+              "code": "min_time",
+              "label": "条件满足",
+              "text": "每周最低投入 4 小时"
+            },
+            {
+              "code": "collaboration",
+              "label": "条件满足",
+              "text": "协作方式至少有一项双方接受"
+            },
+            {
+              "code": "language",
+              "label": "条件满足",
+              "text": "语言要求：all"
+            },
+            {
+              "code": "score:skills",
+              "label": "加分技能",
+              "text": "已登记的加分技能满足情况"
+            },
+            {
+              "code": "score:role",
+              "label": "角色意向",
+              "text": "命中首选角色"
+            },
+            {
+              "code": "score:domain",
+              "label": "领域兴趣",
+              "text": "领域代码存在共同项"
+            },
+            {
+              "code": "score:time",
+              "label": "期望时间",
+              "text": "按每周期望投入 8 小时比较，达标即封顶"
+            }
+          ],
+          "unmet_requirements": [],
+          "missing_fields": [],
+          "hard_checks": [
+            {
+              "code": "recruitment",
+              "status": "pass",
+              "text": "岗位需开放且有剩余名额"
+            },
+            {
+              "code": "required:skill.react",
+              "status": "pass",
+              "text": "必需技能 skill.react，最低等级 3"
+            },
+            {
+              "code": "min_time",
+              "status": "pass",
+              "text": "每周最低投入 4 小时"
+            },
+            {
+              "code": "collaboration",
+              "status": "pass",
+              "text": "协作方式至少有一项双方接受"
+            },
+            {
+              "code": "language",
+              "status": "pass",
+              "text": "语言要求：all"
+            }
+          ],
+          "warnings": [],
+          "profile_version": 1,
+          "role_version": 1,
+          "algorithm_version": "0.1.0-draft",
+          "model_id": null,
+          "model_revision": null,
+          "computed_at": "2026-10-20T03:22:06.837576+00:00"
+        }
+      ],
+      "projects": [
+        {
+          "project_id": "project.education",
+          "best_role_id": "role.education.frontend",
+          "match": 74,
+          "reasons": [
+            {
+              "code": "recruitment",
+              "label": "条件满足",
+              "text": "岗位需开放且有剩余名额"
+            },
+            {
+              "code": "required:skill.react",
+              "label": "条件满足",
+              "text": "必需技能 skill.react，最低等级 3"
+            },
+            {
+              "code": "min_time",
+              "label": "条件满足",
+              "text": "每周最低投入 4 小时"
+            },
+            {
+              "code": "collaboration",
+              "label": "条件满足",
+              "text": "协作方式至少有一项双方接受"
+            },
+            {
+              "code": "language",
+              "label": "条件满足",
+              "text": "语言要求：all"
+            },
+            {
+              "code": "score:skills",
+              "label": "加分技能",
+              "text": "已登记的加分技能满足情况"
+            },
+            {
+              "code": "score:role",
+              "label": "角色意向",
+              "text": "命中首选角色"
+            },
+            {
+              "code": "score:domain",
+              "label": "领域兴趣",
+              "text": "领域代码存在共同项"
+            },
+            {
+              "code": "score:time",
+              "label": "期望时间",
+              "text": "按每周期望投入 8 小时比较，达标即封顶"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "profile_id": "profile.demo.1",
+          "project_id": "project.education",
+          "role_id": "role.education.frontend",
+          "eligibility": "eligible",
+          "match": 74,
+          "provisional_match": null,
+          "scoring_status": "complete",
+          "scoring_coverage": 1.0,
+          "component_scores": {
+            "skills": {
+              "status": "scored",
+              "score": 50.0,
+              "method": "codes_and_levels"
+            },
+            "role": {
+              "status": "scored",
+              "score": 100.0,
+              "method": "codes"
+            },
+            "domain": {
+              "status": "scored",
+              "score": 100.0,
+              "method": "codes"
+            },
+            "time": {
+              "status": "scored",
+              "score": 75.0,
+              "method": "hours_ratio"
+            }
+          },
+          "effective_weights": {
+            "skills": 0.46729598278091244,
+            "role": 0.27718059061096517,
+            "domain": 0.16008847502439438,
+            "time": 0.09543495158372808
+          },
+          "reasons": [
+            {
+              "code": "recruitment",
+              "label": "条件满足",
+              "text": "岗位需开放且有剩余名额"
+            },
+            {
+              "code": "required:skill.react",
+              "label": "条件满足",
+              "text": "必需技能 skill.react，最低等级 3"
+            },
+            {
+              "code": "min_time",
+              "label": "条件满足",
+              "text": "每周最低投入 4 小时"
+            },
+            {
+              "code": "collaboration",
+              "label": "条件满足",
+              "text": "协作方式至少有一项双方接受"
+            },
+            {
+              "code": "language",
+              "label": "条件满足",
+              "text": "语言要求：all"
+            },
+            {
+              "code": "score:skills",
+              "label": "加分技能",
+              "text": "已登记的加分技能满足情况"
+            },
+            {
+              "code": "score:role",
+              "label": "角色意向",
+              "text": "命中首选角色"
+            },
+            {
+              "code": "score:domain",
+              "label": "领域兴趣",
+              "text": "领域代码存在共同项"
+            },
+            {
+              "code": "score:time",
+              "label": "期望时间",
+              "text": "按每周期望投入 8 小时比较，达标即封顶"
+            }
+          ],
+          "unmet_requirements": [],
+          "missing_fields": [],
+          "hard_checks": [
+            {
+              "code": "recruitment",
+              "status": "pass",
+              "text": "岗位需开放且有剩余名额"
+            },
+            {
+              "code": "required:skill.react",
+              "status": "pass",
+              "text": "必需技能 skill.react，最低等级 3"
+            },
+            {
+              "code": "min_time",
+              "status": "pass",
+              "text": "每周最低投入 4 小时"
+            },
+            {
+              "code": "collaboration",
+              "status": "pass",
+              "text": "协作方式至少有一项双方接受"
+            },
+            {
+              "code": "language",
+              "status": "pass",
+              "text": "语言要求：all"
+            }
+          ],
+          "warnings": [],
+          "profile_version": 1,
+          "role_version": 1,
+          "algorithm_version": "0.1.0-draft",
+          "model_id": null,
+          "model_revision": null,
+          "computed_at": "2026-10-20T03:22:06.837576+00:00"
+        }
+      ],
+      "algorithm_version": "0.1.0-draft",
+      "contract_version": "0.1.0"
+    }
+  },
+  {
+    "id": "unknown_required_level",
+    "response": {
+      "recommendations": [],
+      "projects": [],
+      "comparisons": [
+        {
+          "profile_id": "profile.demo.1",
+          "project_id": "project.education",
+          "role_id": "role.education.frontend",
+          "eligibility": "needs_confirmation",
+          "match": null,
+          "provisional_match": null,
+          "scoring_status": "not_scored",
+          "scoring_coverage": 0.0,
+          "component_scores": {
+            "skills": {
+              "status": "not_configured",
+              "score": null,
+              "method": null
+            },
+            "role": {
+              "status": "not_configured",
+              "score": null,
+              "method": null
+            },
+            "domain": {
+              "status": "not_configured",
+              "score": null,
+              "method": null
+            },
+            "time": {
+              "status": "not_configured",
+              "score": null,
+              "method": null
+            }
+          },
+          "effective_weights": {},
+          "reasons": [
+            {
+              "code": "recruitment",
+              "label": "条件满足",
+              "text": "岗位需开放且有剩余名额"
+            },
+            {
+              "code": "min_time",
+              "label": "条件满足",
+              "text": "每周最低投入 4 小时"
+            },
+            {
+              "code": "collaboration",
+              "label": "条件满足",
+              "text": "协作方式至少有一项双方接受"
+            },
+            {
+              "code": "language",
+              "label": "条件满足",
+              "text": "语言要求：all"
+            }
+          ],
+          "unmet_requirements": [],
+          "missing_fields": [
+            "skills.skill.react.level"
+          ],
+          "hard_checks": [
+            {
+              "code": "recruitment",
+              "status": "pass",
+              "text": "岗位需开放且有剩余名额"
+            },
+            {
+              "code": "required:skill.react",
+              "status": "unknown",
+              "text": "必需技能 skill.react，最低等级 3"
+            },
+            {
+              "code": "min_time",
+              "status": "pass",
+              "text": "每周最低投入 4 小时"
+            },
+            {
+              "code": "collaboration",
+              "status": "pass",
+              "text": "协作方式至少有一项双方接受"
+            },
+            {
+              "code": "language",
+              "status": "pass",
+              "text": "语言要求：all"
+            }
+          ],
+          "warnings": [],
+          "profile_version": 1,
+          "role_version": 1,
+          "algorithm_version": "0.1.0-draft",
+          "model_id": null,
+          "model_revision": null,
+          "computed_at": "2026-10-20T03:22:06.853093+00:00"
+        }
+      ],
+      "algorithm_version": "0.1.0-draft",
+      "contract_version": "0.1.0"
+    }
+  },
+  {
+    "id": "unknown_time",
+    "response": {
+      "recommendations": [],
+      "projects": [],
+      "comparisons": [
+        {
+          "profile_id": "profile.demo.1",
+          "project_id": "project.education",
+          "role_id": "role.education.frontend",
+          "eligibility": "needs_confirmation",
+          "match": null,
+          "provisional_match": null,
+          "scoring_status": "not_scored",
+          "scoring_coverage": 0.0,
+          "component_scores": {
+            "skills": {
+              "status": "not_configured",
+              "score": null,
+              "method": null
+            },
+            "role": {
+              "status": "not_configured",
+              "score": null,
+              "method": null
+            },
+            "domain": {
+              "status": "not_configured",
+              "score": null,
+              "method": null
+            },
+            "time": {
+              "status": "not_configured",
+              "score": null,
+              "method": null
+            }
+          },
+          "effective_weights": {},
+          "reasons": [
+            {
+              "code": "recruitment",
+              "label": "条件满足",
+              "text": "岗位需开放且有剩余名额"
+            },
+            {
+              "code": "required:skill.react",
+              "label": "条件满足",
+              "text": "必需技能 skill.react，最低等级 3"
+            },
+            {
+              "code": "collaboration",
+              "label": "条件满足",
+              "text": "协作方式至少有一项双方接受"
+            },
+            {
+              "code": "language",
+              "label": "条件满足",
+              "text": "语言要求：all"
+            }
+          ],
+          "unmet_requirements": [],
+          "missing_fields": [
+            "availability_hours_per_week"
+          ],
+          "hard_checks": [
+            {
+              "code": "recruitment",
+              "status": "pass",
+              "text": "岗位需开放且有剩余名额"
+            },
+            {
+              "code": "required:skill.react",
+              "status": "pass",
+              "text": "必需技能 skill.react，最低等级 3"
+            },
+            {
+              "code": "min_time",
+              "status": "unknown",
+              "text": "每周最低投入 4 小时"
+            },
+            {
+              "code": "collaboration",
+              "status": "pass",
+              "text": "协作方式至少有一项双方接受"
+            },
+            {
+              "code": "language",
+              "status": "pass",
+              "text": "语言要求：all"
+            }
+          ],
+          "warnings": [],
+          "profile_version": 1,
+          "role_version": 1,
+          "algorithm_version": "0.1.0-draft",
+          "model_id": null,
+          "model_revision": null,
+          "computed_at": "2026-10-20T03:22:06.856494+00:00"
+        }
+      ],
+      "algorithm_version": "0.1.0-draft",
+      "contract_version": "0.1.0"
+    }
+  },
+  {
+    "id": "missing_required_skill",
+    "response": {
+      "recommendations": [],
+      "projects": [],
+      "comparisons": [
+        {
+          "profile_id": "profile.demo.1",
+          "project_id": "project.education",
+          "role_id": "role.education.frontend",
+          "eligibility": "ineligible",
+          "match": null,
+          "provisional_match": null,
+          "scoring_status": "not_scored",
+          "scoring_coverage": 0.0,
+          "component_scores": {
+            "skills": {
+              "status": "not_configured",
+              "score": null,
+              "method": null
+            },
+            "role": {
+              "status": "not_configured",
+              "score": null,
+              "method": null
+            },
+            "domain": {
+              "status": "not_configured",
+              "score": null,
+              "method": null
+            },
+            "time": {
+              "status": "not_configured",
+              "score": null,
+              "method": null
+            }
+          },
+          "effective_weights": {},
+          "reasons": [
+            {
+              "code": "recruitment",
+              "label": "条件满足",
+              "text": "岗位需开放且有剩余名额"
+            },
+            {
+              "code": "min_time",
+              "label": "条件满足",
+              "text": "每周最低投入 4 小时"
+            },
+            {
+              "code": "collaboration",
+              "label": "条件满足",
+              "text": "协作方式至少有一项双方接受"
+            },
+            {
+              "code": "language",
+              "label": "条件满足",
+              "text": "语言要求：all"
+            }
+          ],
+          "unmet_requirements": [
+            {
+              "code": "required:skill.react",
+              "label": "未满足条件",
+              "text": "必需技能 skill.react，最低等级 3"
+            }
+          ],
+          "missing_fields": [],
+          "hard_checks": [
+            {
+              "code": "recruitment",
+              "status": "pass",
+              "text": "岗位需开放且有剩余名额"
+            },
+            {
+              "code": "required:skill.react",
+              "status": "fail",
+              "text": "必需技能 skill.react，最低等级 3"
+            },
+            {
+              "code": "min_time",
+              "status": "pass",
+              "text": "每周最低投入 4 小时"
+            },
+            {
+              "code": "collaboration",
+              "status": "pass",
+              "text": "协作方式至少有一项双方接受"
+            },
+            {
+              "code": "language",
+              "status": "pass",
+              "text": "语言要求：all"
+            }
+          ],
+          "warnings": [],
+          "profile_version": 1,
+          "role_version": 1,
+          "algorithm_version": "0.1.0-draft",
+          "model_id": null,
+          "model_revision": null,
+          "computed_at": "2026-10-20T03:22:06.858494+00:00"
+        }
+      ],
+      "algorithm_version": "0.1.0-draft",
+      "contract_version": "0.1.0"
+    }
+  },
+  {
+    "id": "insufficient_time",
+    "response": {
+      "recommendations": [],
+      "projects": [],
+      "comparisons": [
+        {
+          "profile_id": "profile.demo.1",
+          "project_id": "project.education",
+          "role_id": "role.education.frontend",
+          "eligibility": "ineligible",
+          "match": null,
+          "provisional_match": null,
+          "scoring_status": "not_scored",
+          "scoring_coverage": 0.0,
+          "component_scores": {
+            "skills": {
+              "status": "not_configured",
+              "score": null,
+              "method": null
+            },
+            "role": {
+              "status": "not_configured",
+              "score": null,
+              "method": null
+            },
+            "domain": {
+              "status": "not_configured",
+              "score": null,
+              "method": null
+            },
+            "time": {
+              "status": "not_configured",
+              "score": null,
+              "method": null
+            }
+          },
+          "effective_weights": {},
+          "reasons": [
+            {
+              "code": "recruitment",
+              "label": "条件满足",
+              "text": "岗位需开放且有剩余名额"
+            },
+            {
+              "code": "required:skill.react",
+              "label": "条件满足",
+              "text": "必需技能 skill.react，最低等级 3"
+            },
+            {
+              "code": "collaboration",
+              "label": "条件满足",
+              "text": "协作方式至少有一项双方接受"
+            },
+            {
+              "code": "language",
+              "label": "条件满足",
+              "text": "语言要求：all"
+            }
+          ],
+          "unmet_requirements": [
+            {
+              "code": "min_time",
+              "label": "未满足条件",
+              "text": "每周最低投入 4 小时"
+            }
+          ],
+          "missing_fields": [],
+          "hard_checks": [
+            {
+              "code": "recruitment",
+              "status": "pass",
+              "text": "岗位需开放且有剩余名额"
+            },
+            {
+              "code": "required:skill.react",
+              "status": "pass",
+              "text": "必需技能 skill.react，最低等级 3"
+            },
+            {
+              "code": "min_time",
+              "status": "fail",
+              "text": "每周最低投入 4 小时"
+            },
+            {
+              "code": "collaboration",
+              "status": "pass",
+              "text": "协作方式至少有一项双方接受"
+            },
+            {
+              "code": "language",
+              "status": "pass",
+              "text": "语言要求：all"
+            }
+          ],
+          "warnings": [],
+          "profile_version": 1,
+          "role_version": 1,
+          "algorithm_version": "0.1.0-draft",
+          "model_id": null,
+          "model_revision": null,
+          "computed_at": "2026-10-20T03:22:06.859493+00:00"
+        }
+      ],
+      "algorithm_version": "0.1.0-draft",
+      "contract_version": "0.1.0"
+    }
+  },
+  {
+    "id": "zero_time",
+    "response": {
+      "recommendations": [],
+      "projects": [],
+      "comparisons": [
+        {
+          "profile_id": "profile.demo.1",
+          "project_id": "project.education",
+          "role_id": "role.education.frontend",
+          "eligibility": "ineligible",
+          "match": null,
+          "provisional_match": null,
+          "scoring_status": "not_scored",
+          "scoring_coverage": 0.0,
+          "component_scores": {
+            "skills": {
+              "status": "not_configured",
+              "score": null,
+              "method": null
+            },
+            "role": {
+              "status": "not_configured",
+              "score": null,
+              "method": null
+            },
+            "domain": {
+              "status": "not_configured",
+              "score": null,
+              "method": null
+            },
+            "time": {
+              "status": "not_configured",
+              "score": null,
+              "method": null
+            }
+          },
+          "effective_weights": {},
+          "reasons": [
+            {
+              "code": "recruitment",
+              "label": "条件满足",
+              "text": "岗位需开放且有剩余名额"
+            },
+            {
+              "code": "required:skill.react",
+              "label": "条件满足",
+              "text": "必需技能 skill.react，最低等级 3"
+            },
+            {
+              "code": "collaboration",
+              "label": "条件满足",
+              "text": "协作方式至少有一项双方接受"
+            },
+            {
+              "code": "language",
+              "label": "条件满足",
+              "text": "语言要求：all"
+            }
+          ],
+          "unmet_requirements": [
+            {
+              "code": "min_time",
+              "label": "未满足条件",
+              "text": "每周最低投入 4 小时"
+            }
+          ],
+          "missing_fields": [],
+          "hard_checks": [
+            {
+              "code": "recruitment",
+              "status": "pass",
+              "text": "岗位需开放且有剩余名额"
+            },
+            {
+              "code": "required:skill.react",
+              "status": "pass",
+              "text": "必需技能 skill.react，最低等级 3"
+            },
+            {
+              "code": "min_time",
+              "status": "fail",
+              "text": "每周最低投入 4 小时"
+            },
+            {
+              "code": "collaboration",
+              "status": "pass",
+              "text": "协作方式至少有一项双方接受"
+            },
+            {
+              "code": "language",
+              "status": "pass",
+              "text": "语言要求：all"
+            }
+          ],
+          "warnings": [],
+          "profile_version": 1,
+          "role_version": 1,
+          "algorithm_version": "0.1.0-draft",
+          "model_id": null,
+          "model_revision": null,
+          "computed_at": "2026-10-20T03:22:06.860493+00:00"
+        }
+      ],
+      "algorithm_version": "0.1.0-draft",
+      "contract_version": "0.1.0"
+    }
+  },
+  {
+    "id": "no_domain_preference",
+    "response": {
+      "recommendations": [
+        {
+          "profile_id": "profile.demo.1",
+          "project_id": "project.education",
+          "role_id": "role.education.frontend",
+          "eligibility": "eligible",
+          "match": 69,
+          "provisional_match": null,
+          "scoring_status": "complete",
+          "scoring_coverage": 1.0,
+          "component_scores": {
+            "skills": {
+              "status": "scored",
+              "score": 50.0,
+              "method": "codes_and_levels"
+            },
+            "role": {
+              "status": "scored",
+              "score": 100.0,
+              "method": "codes"
+            },
+            "domain": {
+              "status": "no_preference",
+              "score": null,
+              "method": null
+            },
+            "time": {
+              "status": "scored",
+              "score": 75.0,
+              "method": "hours_ratio"
+            }
+          },
+          "effective_weights": {
+            "skills": 0.5563633417156462,
+            "role": 0.33001165285714534,
+            "time": 0.1136250054272084
+          },
+          "reasons": [
+            {
+              "code": "recruitment",
+              "label": "条件满足",
+              "text": "岗位需开放且有剩余名额"
+            },
+            {
+              "code": "required:skill.react",
+              "label": "条件满足",
+              "text": "必需技能 skill.react，最低等级 3"
+            },
+            {
+              "code": "min_time",
+              "label": "条件满足",
+              "text": "每周最低投入 4 小时"
+            },
+            {
+              "code": "collaboration",
+              "label": "条件满足",
+              "text": "协作方式至少有一项双方接受"
+            },
+            {
+              "code": "language",
+              "label": "条件满足",
+              "text": "语言要求：all"
+            },
+            {
+              "code": "score:skills",
+              "label": "加分技能",
+              "text": "已登记的加分技能满足情况"
+            },
+            {
+              "code": "score:role",
+              "label": "角色意向",
+              "text": "命中首选角色"
+            },
+            {
+              "code": "score:time",
+              "label": "期望时间",
+              "text": "按每周期望投入 8 小时比较，达标即封顶"
+            }
+          ],
+          "unmet_requirements": [],
+          "missing_fields": [],
+          "hard_checks": [
+            {
+              "code": "recruitment",
+              "status": "pass",
+              "text": "岗位需开放且有剩余名额"
+            },
+            {
+              "code": "required:skill.react",
+              "status": "pass",
+              "text": "必需技能 skill.react，最低等级 3"
+            },
+            {
+              "code": "min_time",
+              "status": "pass",
+              "text": "每周最低投入 4 小时"
+            },
+            {
+              "code": "collaboration",
+              "status": "pass",
+              "text": "协作方式至少有一项双方接受"
+            },
+            {
+              "code": "language",
+              "status": "pass",
+              "text": "语言要求：all"
+            }
+          ],
+          "warnings": [],
+          "profile_version": 1,
+          "role_version": 1,
+          "algorithm_version": "0.1.0-draft",
+          "model_id": null,
+          "model_revision": null,
+          "computed_at": "2026-10-20T03:22:06.862493+00:00"
+        }
+      ],
+      "projects": [
+        {
+          "project_id": "project.education",
+          "best_role_id": "role.education.frontend",
+          "match": 69,
+          "reasons": [
+            {
+              "code": "recruitment",
+              "label": "条件满足",
+              "text": "岗位需开放且有剩余名额"
+            },
+            {
+              "code": "required:skill.react",
+              "label": "条件满足",
+              "text": "必需技能 skill.react，最低等级 3"
+            },
+            {
+              "code": "min_time",
+              "label": "条件满足",
+              "text": "每周最低投入 4 小时"
+            },
+            {
+              "code": "collaboration",
+              "label": "条件满足",
+              "text": "协作方式至少有一项双方接受"
+            },
+            {
+              "code": "language",
+              "label": "条件满足",
+              "text": "语言要求：all"
+            },
+            {
+              "code": "score:skills",
+              "label": "加分技能",
+              "text": "已登记的加分技能满足情况"
+            },
+            {
+              "code": "score:role",
+              "label": "角色意向",
+              "text": "命中首选角色"
+            },
+            {
+              "code": "score:time",
+              "label": "期望时间",
+              "text": "按每周期望投入 8 小时比较，达标即封顶"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "profile_id": "profile.demo.1",
+          "project_id": "project.education",
+          "role_id": "role.education.frontend",
+          "eligibility": "eligible",
+          "match": 69,
+          "provisional_match": null,
+          "scoring_status": "complete",
+          "scoring_coverage": 1.0,
+          "component_scores": {
+            "skills": {
+              "status": "scored",
+              "score": 50.0,
+              "method": "codes_and_levels"
+            },
+            "role": {
+              "status": "scored",
+              "score": 100.0,
+              "method": "codes"
+            },
+            "domain": {
+              "status": "no_preference",
+              "score": null,
+              "method": null
+            },
+            "time": {
+              "status": "scored",
+              "score": 75.0,
+              "method": "hours_ratio"
+            }
+          },
+          "effective_weights": {
+            "skills": 0.5563633417156462,
+            "role": 0.33001165285714534,
+            "time": 0.1136250054272084
+          },
+          "reasons": [
+            {
+              "code": "recruitment",
+              "label": "条件满足",
+              "text": "岗位需开放且有剩余名额"
+            },
+            {
+              "code": "required:skill.react",
+              "label": "条件满足",
+              "text": "必需技能 skill.react，最低等级 3"
+            },
+            {
+              "code": "min_time",
+              "label": "条件满足",
+              "text": "每周最低投入 4 小时"
+            },
+            {
+              "code": "collaboration",
+              "label": "条件满足",
+              "text": "协作方式至少有一项双方接受"
+            },
+            {
+              "code": "language",
+              "label": "条件满足",
+              "text": "语言要求：all"
+            },
+            {
+              "code": "score:skills",
+              "label": "加分技能",
+              "text": "已登记的加分技能满足情况"
+            },
+            {
+              "code": "score:role",
+              "label": "角色意向",
+              "text": "命中首选角色"
+            },
+            {
+              "code": "score:time",
+              "label": "期望时间",
+              "text": "按每周期望投入 8 小时比较，达标即封顶"
+            }
+          ],
+          "unmet_requirements": [],
+          "missing_fields": [],
+          "hard_checks": [
+            {
+              "code": "recruitment",
+              "status": "pass",
+              "text": "岗位需开放且有剩余名额"
+            },
+            {
+              "code": "required:skill.react",
+              "status": "pass",
+              "text": "必需技能 skill.react，最低等级 3"
+            },
+            {
+              "code": "min_time",
+              "status": "pass",
+              "text": "每周最低投入 4 小时"
+            },
+            {
+              "code": "collaboration",
+              "status": "pass",
+              "text": "协作方式至少有一项双方接受"
+            },
+            {
+              "code": "language",
+              "status": "pass",
+              "text": "语言要求：all"
+            }
+          ],
+          "warnings": [],
+          "profile_version": 1,
+          "role_version": 1,
+          "algorithm_version": "0.1.0-draft",
+          "model_id": null,
+          "model_revision": null,
+          "computed_at": "2026-10-20T03:22:06.862493+00:00"
+        }
+      ],
+      "algorithm_version": "0.1.0-draft",
+      "contract_version": "0.1.0"
+    }
+  },
+  {
+    "id": "no_preferred_skills",
+    "response": {
+      "recommendations": [
+        {
+          "profile_id": "profile.demo.1",
+          "project_id": "project.education",
+          "role_id": "role.education.frontend",
+          "eligibility": "eligible",
+          "match": 96,
+          "provisional_match": null,
+          "scoring_status": "complete",
+          "scoring_coverage": 1.0,
+          "component_scores": {
+            "skills": {
+              "status": "not_configured",
+              "score": null,
+              "method": null
+            },
+            "role": {
+              "status": "scored",
+              "score": 100.0,
+              "method": "codes"
+            },
+            "domain": {
+              "status": "scored",
+              "score": 100.0,
+              "method": "codes"
+            },
+            "time": {
+              "status": "scored",
+              "score": 75.0,
+              "method": "hours_ratio"
+            }
+          },
+          "effective_weights": {
+            "role": 0.5203275771373953,
+            "domain": 0.300520495152478,
+            "time": 0.1791519277101267
+          },
+          "reasons": [
+            {
+              "code": "recruitment",
+              "label": "条件满足",
+              "text": "岗位需开放且有剩余名额"
+            },
+            {
+              "code": "required:skill.react",
+              "label": "条件满足",
+              "text": "必需技能 skill.react，最低等级 3"
+            },
+            {
+              "code": "min_time",
+              "label": "条件满足",
+              "text": "每周最低投入 4 小时"
+            },
+            {
+              "code": "collaboration",
+              "label": "条件满足",
+              "text": "协作方式至少有一项双方接受"
+            },
+            {
+              "code": "language",
+              "label": "条件满足",
+              "text": "语言要求：all"
+            },
+            {
+              "code": "score:role",
+              "label": "角色意向",
+              "text": "命中首选角色"
+            },
+            {
+              "code": "score:domain",
+              "label": "领域兴趣",
+              "text": "领域代码存在共同项"
+            },
+            {
+              "code": "score:time",
+              "label": "期望时间",
+              "text": "按每周期望投入 8 小时比较，达标即封顶"
+            }
+          ],
+          "unmet_requirements": [],
+          "missing_fields": [],
+          "hard_checks": [
+            {
+              "code": "recruitment",
+              "status": "pass",
+              "text": "岗位需开放且有剩余名额"
+            },
+            {
+              "code": "required:skill.react",
+              "status": "pass",
+              "text": "必需技能 skill.react，最低等级 3"
+            },
+            {
+              "code": "min_time",
+              "status": "pass",
+              "text": "每周最低投入 4 小时"
+            },
+            {
+              "code": "collaboration",
+              "status": "pass",
+              "text": "协作方式至少有一项双方接受"
+            },
+            {
+              "code": "language",
+              "status": "pass",
+              "text": "语言要求：all"
+            }
+          ],
+          "warnings": [],
+          "profile_version": 1,
+          "role_version": 1,
+          "algorithm_version": "0.1.0-draft",
+          "model_id": null,
+          "model_revision": null,
+          "computed_at": "2026-10-20T03:22:06.864493+00:00"
+        }
+      ],
+      "projects": [
+        {
+          "project_id": "project.education",
+          "best_role_id": "role.education.frontend",
+          "match": 96,
+          "reasons": [
+            {
+              "code": "recruitment",
+              "label": "条件满足",
+              "text": "岗位需开放且有剩余名额"
+            },
+            {
+              "code": "required:skill.react",
+              "label": "条件满足",
+              "text": "必需技能 skill.react，最低等级 3"
+            },
+            {
+              "code": "min_time",
+              "label": "条件满足",
+              "text": "每周最低投入 4 小时"
+            },
+            {
+              "code": "collaboration",
+              "label": "条件满足",
+              "text": "协作方式至少有一项双方接受"
+            },
+            {
+              "code": "language",
+              "label": "条件满足",
+              "text": "语言要求：all"
+            },
+            {
+              "code": "score:role",
+              "label": "角色意向",
+              "text": "命中首选角色"
+            },
+            {
+              "code": "score:domain",
+              "label": "领域兴趣",
+              "text": "领域代码存在共同项"
+            },
+            {
+              "code": "score:time",
+              "label": "期望时间",
+              "text": "按每周期望投入 8 小时比较，达标即封顶"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "profile_id": "profile.demo.1",
+          "project_id": "project.education",
+          "role_id": "role.education.frontend",
+          "eligibility": "eligible",
+          "match": 96,
+          "provisional_match": null,
+          "scoring_status": "complete",
+          "scoring_coverage": 1.0,
+          "component_scores": {
+            "skills": {
+              "status": "not_configured",
+              "score": null,
+              "method": null
+            },
+            "role": {
+              "status": "scored",
+              "score": 100.0,
+              "method": "codes"
+            },
+            "domain": {
+              "status": "scored",
+              "score": 100.0,
+              "method": "codes"
+            },
+            "time": {
+              "status": "scored",
+              "score": 75.0,
+              "method": "hours_ratio"
+            }
+          },
+          "effective_weights": {
+            "role": 0.5203275771373953,
+            "domain": 0.300520495152478,
+            "time": 0.1791519277101267
+          },
+          "reasons": [
+            {
+              "code": "recruitment",
+              "label": "条件满足",
+              "text": "岗位需开放且有剩余名额"
+            },
+            {
+              "code": "required:skill.react",
+              "label": "条件满足",
+              "text": "必需技能 skill.react，最低等级 3"
+            },
+            {
+              "code": "min_time",
+              "label": "条件满足",
+              "text": "每周最低投入 4 小时"
+            },
+            {
+              "code": "collaboration",
+              "label": "条件满足",
+              "text": "协作方式至少有一项双方接受"
+            },
+            {
+              "code": "language",
+              "label": "条件满足",
+              "text": "语言要求：all"
+            },
+            {
+              "code": "score:role",
+              "label": "角色意向",
+              "text": "命中首选角色"
+            },
+            {
+              "code": "score:domain",
+              "label": "领域兴趣",
+              "text": "领域代码存在共同项"
+            },
+            {
+              "code": "score:time",
+              "label": "期望时间",
+              "text": "按每周期望投入 8 小时比较，达标即封顶"
+            }
+          ],
+          "unmet_requirements": [],
+          "missing_fields": [],
+          "hard_checks": [
+            {
+              "code": "recruitment",
+              "status": "pass",
+              "text": "岗位需开放且有剩余名额"
+            },
+            {
+              "code": "required:skill.react",
+              "status": "pass",
+              "text": "必需技能 skill.react，最低等级 3"
+            },
+            {
+              "code": "min_time",
+              "status": "pass",
+              "text": "每周最低投入 4 小时"
+            },
+            {
+              "code": "collaboration",
+              "status": "pass",
+              "text": "协作方式至少有一项双方接受"
+            },
+            {
+              "code": "language",
+              "status": "pass",
+              "text": "语言要求：all"
+            }
+          ],
+          "warnings": [],
+          "profile_version": 1,
+          "role_version": 1,
+          "algorithm_version": "0.1.0-draft",
+          "model_id": null,
+          "model_revision": null,
+          "computed_at": "2026-10-20T03:22:06.864493+00:00"
+        }
+      ],
+      "algorithm_version": "0.1.0-draft",
+      "contract_version": "0.1.0"
+    }
+  },
+  {
+    "id": "unknown_soft_level",
+    "response": {
+      "recommendations": [],
+      "projects": [],
+      "comparisons": [
+        {
+          "profile_id": "profile.demo.1",
+          "project_id": "project.education",
+          "role_id": "role.education.frontend",
+          "eligibility": "eligible",
+          "match": null,
+          "provisional_match": 95.52,
+          "scoring_status": "provisional",
+          "scoring_coverage": 0.5327,
+          "component_scores": {
+            "skills": {
+              "status": "missing",
+              "score": null,
+              "method": "codes_and_levels"
+            },
+            "role": {
+              "status": "scored",
+              "score": 100.0,
+              "method": "codes"
+            },
+            "domain": {
+              "status": "scored",
+              "score": 100.0,
+              "method": "codes"
+            },
+            "time": {
+              "status": "scored",
+              "score": 75.0,
+              "method": "hours_ratio"
+            }
+          },
+          "effective_weights": {
+            "role": 0.5203275771373953,
+            "domain": 0.300520495152478,
+            "time": 0.1791519277101267
+          },
+          "reasons": [
+            {
+              "code": "recruitment",
+              "label": "条件满足",
+              "text": "岗位需开放且有剩余名额"
+            },
+            {
+              "code": "required:skill.react",
+              "label": "条件满足",
+              "text": "必需技能 skill.react，最低等级 3"
+            },
+            {
+              "code": "min_time",
+              "label": "条件满足",
+              "text": "每周最低投入 4 小时"
+            },
+            {
+              "code": "collaboration",
+              "label": "条件满足",
+              "text": "协作方式至少有一项双方接受"
+            },
+            {
+              "code": "language",
+              "label": "条件满足",
+              "text": "语言要求：all"
+            },
+            {
+              "code": "score:role",
+              "label": "角色意向",
+              "text": "命中首选角色"
+            },
+            {
+              "code": "score:domain",
+              "label": "领域兴趣",
+              "text": "领域代码存在共同项"
+            },
+            {
+              "code": "score:time",
+              "label": "期望时间",
+              "text": "按每周期望投入 8 小时比较，达标即封顶"
+            }
+          ],
+          "unmet_requirements": [],
+          "missing_fields": [
+            "skills",
+            "skills.skill.typescript"
+          ],
+          "hard_checks": [
+            {
+              "code": "recruitment",
+              "status": "pass",
+              "text": "岗位需开放且有剩余名额"
+            },
+            {
+              "code": "required:skill.react",
+              "status": "pass",
+              "text": "必需技能 skill.react，最低等级 3"
+            },
+            {
+              "code": "min_time",
+              "status": "pass",
+              "text": "每周最低投入 4 小时"
+            },
+            {
+              "code": "collaboration",
+              "status": "pass",
+              "text": "协作方式至少有一项双方接受"
+            },
+            {
+              "code": "language",
+              "status": "pass",
+              "text": "语言要求：all"
+            }
+          ],
+          "warnings": [],
+          "profile_version": 1,
+          "role_version": 1,
+          "algorithm_version": "0.1.0-draft",
+          "model_id": null,
+          "model_revision": null,
+          "computed_at": "2026-10-20T03:22:06.866493+00:00"
+        }
+      ],
+      "algorithm_version": "0.1.0-draft",
+      "contract_version": "0.1.0"
+    }
+  },
+  {
+    "id": "closed_role",
+    "response": {
+      "recommendations": [],
+      "projects": [],
+      "comparisons": [
+        {
+          "profile_id": "profile.demo.1",
+          "project_id": "project.education",
+          "role_id": "role.education.frontend",
+          "eligibility": "ineligible",
+          "match": null,
+          "provisional_match": null,
+          "scoring_status": "not_scored",
+          "scoring_coverage": 0.0,
+          "component_scores": {
+            "skills": {
+              "status": "not_configured",
+              "score": null,
+              "method": null
+            },
+            "role": {
+              "status": "not_configured",
+              "score": null,
+              "method": null
+            },
+            "domain": {
+              "status": "not_configured",
+              "score": null,
+              "method": null
+            },
+            "time": {
+              "status": "not_configured",
+              "score": null,
+              "method": null
+            }
+          },
+          "effective_weights": {},
+          "reasons": [
+            {
+              "code": "required:skill.react",
+              "label": "条件满足",
+              "text": "必需技能 skill.react，最低等级 3"
+            },
+            {
+              "code": "min_time",
+              "label": "条件满足",
+              "text": "每周最低投入 4 小时"
+            },
+            {
+              "code": "collaboration",
+              "label": "条件满足",
+              "text": "协作方式至少有一项双方接受"
+            },
+            {
+              "code": "language",
+              "label": "条件满足",
+              "text": "语言要求：all"
+            }
+          ],
+          "unmet_requirements": [
+            {
+              "code": "recruitment",
+              "label": "未满足条件",
+              "text": "岗位需开放且有剩余名额"
+            }
+          ],
+          "missing_fields": [],
+          "hard_checks": [
+            {
+              "code": "recruitment",
+              "status": "fail",
+              "text": "岗位需开放且有剩余名额"
+            },
+            {
+              "code": "required:skill.react",
+              "status": "pass",
+              "text": "必需技能 skill.react，最低等级 3"
+            },
+            {
+              "code": "min_time",
+              "status": "pass",
+              "text": "每周最低投入 4 小时"
+            },
+            {
+              "code": "collaboration",
+              "status": "pass",
+              "text": "协作方式至少有一项双方接受"
+            },
+            {
+              "code": "language",
+              "status": "pass",
+              "text": "语言要求：all"
+            }
+          ],
+          "warnings": [],
+          "profile_version": 1,
+          "role_version": 1,
+          "algorithm_version": "0.1.0-draft",
+          "model_id": null,
+          "model_revision": null,
+          "computed_at": "2026-10-20T03:22:06.867493+00:00"
+        }
+      ],
+      "algorithm_version": "0.1.0-draft",
+      "contract_version": "0.1.0"
+    }
+  },
+  {
+    "id": "time_wrong_type",
+    "response": {
+      "contract_version": "0.1.0",
+      "error": {
+        "code": "INPUT_INVALID",
+        "fields": [
+          {
+            "path": "$.profile.availability_hours_per_week",
+            "rule": "type",
+            "message": "字段类型或取值不符合契约"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "wrong_contract_version",
+    "response": {
+      "contract_version": "0.1.0",
+      "error": {
+        "code": "INPUT_INVALID",
+        "fields": [
+          {
+            "path": "$.contract_version",
+            "rule": "const",
+            "message": "字段类型或取值不符合契约"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "updated_profile_version",
+    "response": {
+      "recommendations": [
+        {
+          "profile_id": "profile.demo.1",
+          "project_id": "project.education",
+          "role_id": "role.education.frontend",
+          "eligibility": "eligible",
+          "match": 74,
+          "provisional_match": null,
+          "scoring_status": "complete",
+          "scoring_coverage": 1.0,
+          "component_scores": {
+            "skills": {
+              "status": "scored",
+              "score": 50.0,
+              "method": "codes_and_levels"
+            },
+            "role": {
+              "status": "scored",
+              "score": 100.0,
+              "method": "codes"
+            },
+            "domain": {
+              "status": "scored",
+              "score": 100.0,
+              "method": "codes"
+            },
+            "time": {
+              "status": "scored",
+              "score": 75.0,
+              "method": "hours_ratio"
+            }
+          },
+          "effective_weights": {
+            "skills": 0.46729598278091244,
+            "role": 0.27718059061096517,
+            "domain": 0.16008847502439438,
+            "time": 0.09543495158372808
+          },
+          "reasons": [
+            {
+              "code": "recruitment",
+              "label": "条件满足",
+              "text": "岗位需开放且有剩余名额"
+            },
+            {
+              "code": "required:skill.react",
+              "label": "条件满足",
+              "text": "必需技能 skill.react，最低等级 3"
+            },
+            {
+              "code": "min_time",
+              "label": "条件满足",
+              "text": "每周最低投入 4 小时"
+            },
+            {
+              "code": "collaboration",
+              "label": "条件满足",
+              "text": "协作方式至少有一项双方接受"
+            },
+            {
+              "code": "language",
+              "label": "条件满足",
+              "text": "语言要求：all"
+            },
+            {
+              "code": "score:skills",
+              "label": "加分技能",
+              "text": "已登记的加分技能满足情况"
+            },
+            {
+              "code": "score:role",
+              "label": "角色意向",
+              "text": "命中首选角色"
+            },
+            {
+              "code": "score:domain",
+              "label": "领域兴趣",
+              "text": "领域代码存在共同项"
+            },
+            {
+              "code": "score:time",
+              "label": "期望时间",
+              "text": "按每周期望投入 8 小时比较，达标即封顶"
+            }
+          ],
+          "unmet_requirements": [],
+          "missing_fields": [],
+          "hard_checks": [
+            {
+              "code": "recruitment",
+              "status": "pass",
+              "text": "岗位需开放且有剩余名额"
+            },
+            {
+              "code": "required:skill.react",
+              "status": "pass",
+              "text": "必需技能 skill.react，最低等级 3"
+            },
+            {
+              "code": "min_time",
+              "status": "pass",
+              "text": "每周最低投入 4 小时"
+            },
+            {
+              "code": "collaboration",
+              "status": "pass",
+              "text": "协作方式至少有一项双方接受"
+            },
+            {
+              "code": "language",
+              "status": "pass",
+              "text": "语言要求：all"
+            }
+          ],
+          "warnings": [],
+          "profile_version": 2,
+          "role_version": 1,
+          "algorithm_version": "0.1.0-draft",
+          "model_id": null,
+          "model_revision": null,
+          "computed_at": "2026-10-20T03:22:06.870506+00:00"
+        }
+      ],
+      "projects": [
+        {
+          "project_id": "project.education",
+          "best_role_id": "role.education.frontend",
+          "match": 74,
+          "reasons": [
+            {
+              "code": "recruitment",
+              "label": "条件满足",
+              "text": "岗位需开放且有剩余名额"
+            },
+            {
+              "code": "required:skill.react",
+              "label": "条件满足",
+              "text": "必需技能 skill.react，最低等级 3"
+            },
+            {
+              "code": "min_time",
+              "label": "条件满足",
+              "text": "每周最低投入 4 小时"
+            },
+            {
+              "code": "collaboration",
+              "label": "条件满足",
+              "text": "协作方式至少有一项双方接受"
+            },
+            {
+              "code": "language",
+              "label": "条件满足",
+              "text": "语言要求：all"
+            },
+            {
+              "code": "score:skills",
+              "label": "加分技能",
+              "text": "已登记的加分技能满足情况"
+            },
+            {
+              "code": "score:role",
+              "label": "角色意向",
+              "text": "命中首选角色"
+            },
+            {
+              "code": "score:domain",
+              "label": "领域兴趣",
+              "text": "领域代码存在共同项"
+            },
+            {
+              "code": "score:time",
+              "label": "期望时间",
+              "text": "按每周期望投入 8 小时比较，达标即封顶"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "profile_id": "profile.demo.1",
+          "project_id": "project.education",
+          "role_id": "role.education.frontend",
+          "eligibility": "eligible",
+          "match": 74,
+          "provisional_match": null,
+          "scoring_status": "complete",
+          "scoring_coverage": 1.0,
+          "component_scores": {
+            "skills": {
+              "status": "scored",
+              "score": 50.0,
+              "method": "codes_and_levels"
+            },
+            "role": {
+              "status": "scored",
+              "score": 100.0,
+              "method": "codes"
+            },
+            "domain": {
+              "status": "scored",
+              "score": 100.0,
+              "method": "codes"
+            },
+            "time": {
+              "status": "scored",
+              "score": 75.0,
+              "method": "hours_ratio"
+            }
+          },
+          "effective_weights": {
+            "skills": 0.46729598278091244,
+            "role": 0.27718059061096517,
+            "domain": 0.16008847502439438,
+            "time": 0.09543495158372808
+          },
+          "reasons": [
+            {
+              "code": "recruitment",
+              "label": "条件满足",
+              "text": "岗位需开放且有剩余名额"
+            },
+            {
+              "code": "required:skill.react",
+              "label": "条件满足",
+              "text": "必需技能 skill.react，最低等级 3"
+            },
+            {
+              "code": "min_time",
+              "label": "条件满足",
+              "text": "每周最低投入 4 小时"
+            },
+            {
+              "code": "collaboration",
+              "label": "条件满足",
+              "text": "协作方式至少有一项双方接受"
+            },
+            {
+              "code": "language",
+              "label": "条件满足",
+              "text": "语言要求：all"
+            },
+            {
+              "code": "score:skills",
+              "label": "加分技能",
+              "text": "已登记的加分技能满足情况"
+            },
+            {
+              "code": "score:role",
+              "label": "角色意向",
+              "text": "命中首选角色"
+            },
+            {
+              "code": "score:domain",
+              "label": "领域兴趣",
+              "text": "领域代码存在共同项"
+            },
+            {
+              "code": "score:time",
+              "label": "期望时间",
+              "text": "按每周期望投入 8 小时比较，达标即封顶"
+            }
+          ],
+          "unmet_requirements": [],
+          "missing_fields": [],
+          "hard_checks": [
+            {
+              "code": "recruitment",
+              "status": "pass",
+              "text": "岗位需开放且有剩余名额"
+            },
+            {
+              "code": "required:skill.react",
+              "status": "pass",
+              "text": "必需技能 skill.react，最低等级 3"
+            },
+            {
+              "code": "min_time",
+              "status": "pass",
+              "text": "每周最低投入 4 小时"
+            },
+            {
+              "code": "collaboration",
+              "status": "pass",
+              "text": "协作方式至少有一项双方接受"
+            },
+            {
+              "code": "language",
+              "status": "pass",
+              "text": "语言要求：all"
+            }
+          ],
+          "warnings": [],
+          "profile_version": 2,
+          "role_version": 1,
+          "algorithm_version": "0.1.0-draft",
+          "model_id": null,
+          "model_revision": null,
+          "computed_at": "2026-10-20T03:22:06.870506+00:00"
+        }
+      ],
+      "algorithm_version": "0.1.0-draft",
+      "contract_version": "0.1.0"
+    }
+  }
+]

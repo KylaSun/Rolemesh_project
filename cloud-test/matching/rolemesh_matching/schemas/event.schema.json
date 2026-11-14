@@ -1,0 +1,301 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RoleMesh matching analytics event 1.0.0",
+  "type": "object",
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128,
+      "pattern": ".*\\S.*"
+    },
+    "actor_user_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128,
+      "pattern": ".*\\S.*"
+    },
+    "subject_user_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128,
+      "pattern": ".*\\S.*"
+    },
+    "profile_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128,
+      "pattern": ".*\\S.*"
+    },
+    "project_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128,
+      "pattern": ".*\\S.*"
+    },
+    "role_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128,
+      "pattern": ".*\\S.*"
+    },
+    "recommendation_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128,
+      "pattern": ".*\\S.*"
+    },
+    "application_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128,
+      "pattern": ".*\\S.*"
+    },
+    "membership_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128,
+      "pattern": ".*\\S.*"
+    },
+    "event_version": {
+      "const": "1.0.0"
+    },
+    "idempotency_key": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 256
+    },
+    "event_type": {
+      "enum": [
+        "recommendation_generated",
+        "application_submitted",
+        "member_confirmed",
+        "feedback_recorded"
+      ]
+    },
+    "occurred_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "algorithm_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "profile_version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "role_version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "feedback": {
+      "enum": [
+        "useful",
+        "not_relevant",
+        "not_interested"
+      ]
+    },
+    "reason_code": {
+      "enum": [
+        "skills",
+        "role",
+        "domain",
+        "time",
+        "other"
+      ]
+    }
+  },
+  "required": [
+    "event_version",
+    "event_id",
+    "idempotency_key",
+    "event_type",
+    "occurred_at",
+    "actor_user_id",
+    "subject_user_id",
+    "profile_id",
+    "project_id",
+    "role_id",
+    "recommendation_id"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "event_type": {
+            "const": "recommendation_generated"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "algorithm_version",
+          "profile_version",
+          "role_version"
+        ],
+        "not": {
+          "anyOf": [
+            {
+              "required": [
+                "application_id"
+              ]
+            },
+            {
+              "required": [
+                "membership_id"
+              ]
+            },
+            {
+              "required": [
+                "feedback"
+              ]
+            },
+            {
+              "required": [
+                "reason_code"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "event_type": {
+            "const": "application_submitted"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "application_id"
+        ],
+        "not": {
+          "anyOf": [
+            {
+              "required": [
+                "membership_id"
+              ]
+            },
+            {
+              "required": [
+                "algorithm_version"
+              ]
+            },
+            {
+              "required": [
+                "profile_version"
+              ]
+            },
+            {
+              "required": [
+                "role_version"
+              ]
+            },
+            {
+              "required": [
+                "feedback"
+              ]
+            },
+            {
+              "required": [
+                "reason_code"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "event_type": {
+            "const": "member_confirmed"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "application_id",
+          "membership_id"
+        ],
+        "not": {
+          "anyOf": [
+            {
+              "required": [
+                "algorithm_version"
+              ]
+            },
+            {
+              "required": [
+                "profile_version"
+              ]
+            },
+            {
+              "required": [
+                "role_version"
+              ]
+            },
+            {
+              "required": [
+                "feedback"
+              ]
+            },
+            {
+              "required": [
+                "reason_code"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "event_type": {
+            "const": "feedback_recorded"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "feedback",
+          "reason_code"
+        ],
+        "not": {
+          "anyOf": [
+            {
+              "required": [
+                "application_id"
+              ]
+            },
+            {
+              "required": [
+                "membership_id"
+              ]
+            },
+            {
+              "required": [
+                "algorithm_version"
+              ]
+            },
+            {
+              "required": [
+                "profile_version"
+              ]
+            },
+            {
+              "required": [
+                "role_version"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

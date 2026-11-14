@@ -1,0 +1,2 @@
+# Unified contract validation. Install this before using run_request/demo.py.
+jsonschema>=4.18,<5
